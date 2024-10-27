@@ -26,16 +26,16 @@ export default function Navbar() {
         <nav className="bg-white p-6 flex items-center justify-between">
             <Link href="/">
                 <Image 
-                    src="/img/Logo.png"
+                    src="/img/Png 2.png"
                     alt="Dream Legal Logo"
-                    width={48}
+                    width={72}
                     height={48}
                     />
             </Link>
-            <ul className="flex items-center justify-center gap-10">
+            <ul className="flex items-center justify-center gap-4">
                 {
                     links.map((link, key) => (
-                        <li key={key} className="text-gray-700 text-body-lg">
+                        <li key={key} className="text-gray-700 text-body-lg px-3 py-2">
                             <Link 
                                 href={link.href}
                             >
@@ -45,7 +45,7 @@ export default function Navbar() {
                     ))
                 }
             </ul>
-            <button className="text-label-md text-gray-800 bg-gray-100 p-3 rounded-md">
+            <button className="text-label-md text-gray-800 bg-gray-100 px-5 py-3.5 rounded-md">
                 Hubungi Kami
             </button>
         </nav>
