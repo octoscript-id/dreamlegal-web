@@ -82,8 +82,11 @@ const config: Config = {
   		fontSize: {
   			'display-lg': ['64px', '80px'],
   			'display-md': ['40px', '52px'],
+			'display-sm': ['40px', '52px'],
+			'display-xs': ['32px', '40px'],
   			'heading-lg': ['22px', '30px'],
   			'heading-md': ['18px', '26px'],
+			'heading-sm': ['14px', '20px'],
   			'body-xl': ['17px', '24px'],
   			'body-lg': ['16px', '24px'],
   			'body-md': ['14px', '20px'],
