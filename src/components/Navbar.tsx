@@ -1,5 +1,6 @@
 import Image from "next/image"
 import Link from "next/link"
+import { Button } from "./ui/button"
 
 export default function Navbar() {
     const links = [
@@ -23,7 +24,7 @@ export default function Navbar() {
 
     return (
         <>
-        <nav className="bg-white p-6 flex items-center justify-between">
+        <nav className="bg-white px-12 py-5 flex items-center justify-between">
             <Link href="/">
                 <Image 
                     src="/img/Png 2.png"
@@ -45,9 +46,9 @@ export default function Navbar() {
                     ))
                 }
             </ul>
-            <button className="text-label-md text-gray-800 bg-gray-100 px-5 py-3.5 rounded-md">
+            <Button variant="secondary">
                 Hubungi Kami
-            </button>
+            </Button>
         </nav>
         </>
     )
