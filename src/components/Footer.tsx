@@ -21,7 +21,7 @@ export default function Footer() {
     return (
         <>
         <footer className="p-6">
-            <section className="bg-gray-50 p-8 flex justify-between">
+            <section className="bg-gray-50 p-8 flex flex-col lg:flex-row justify-between">
                 <section id="left-footer">
                     <Image 
                         src="/img/Png 2.png"
@@ -35,7 +35,7 @@ export default function Footer() {
                         for Your Business.
                     </h1>
                 </section>
-                <section id="right-footer" className="flex justify-between gap-28">
+                <section id="right-footer" className="flex flex-col md:flex-row gap-6 md:gap-20">
                     <section id="left-sub-footer">
                         <h3 className="text-gray-500 text-body-md mb-3">Media Sosial</h3>
                         <ul className="flex flex-col justify-center gap-1">

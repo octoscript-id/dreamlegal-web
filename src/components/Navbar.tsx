@@ -33,7 +33,7 @@ export default function Navbar() {
                     height={48}
                     />
             </Link>
-            <ul className="flex items-center justify-center gap-4">
+            <ul className="hidden md:flex items-center justify-center gap-4">
                 {
                     links.map((link, key) => (
                         <li key={key} className="text-gray-700 text-body-lg px-3 py-2">
