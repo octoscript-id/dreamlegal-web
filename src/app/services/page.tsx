@@ -1,22 +1,22 @@
 import { Button } from "@/components/ui/button";
+import ServiceSection from "./components/ServiceSection";
 
 export default function ServicesPage() {
   return (
-    <div className="px-4 py-6 space-y-8">
-        <header className="text-center space-y-8">
-            <div className="space-y-2">
-                <h1 className="text-3xl leading-9">Layanan Kami</h1>
-                <p className="leading-6">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+    <div className="px-4 md:px-6 py-6 xl:py-12 space-y-8">
+        <header className="text-center md:text-start max-xl:space-y-8 xl:flex items-end">
+            <div className="space-y-2 xl:space-y-4 w-full">
+                <h1 className="text-[28px] md:text-[32px] xl:text-[40px] leading-9">Layanan Kami</h1>
+                <p className="text-gray-700 leading-6">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
             </div>
             <div className="flex gap-4">
-                <Button className="w-full max-lg:text-sm">Unduh Brosur</Button>
-                <Button variant="secondary" className="w-full max-lg:text-sm">Konsultasi</Button>
+                <Button className="w-full max-xl:text-sm">Unduh Brosur</Button>
+                <Button variant="secondary" className="w-full max-xl:text-sm">Konsultasi</Button>
             </div>
         </header>
-        <div>
-            <section className="bg-gray-25">
-                <h2>Layanan Pendirian Usaha</h2>
-            </section>
+        <div className="space-y-6">
+            <ServiceSection/>
+            <ServiceSection/>
         </div>
     </div>
     
