@@ -33,9 +33,9 @@ export default function RootLayout({
       <body
         className={`${LibreBaskerville.className} ${PlusJakartaSans.className} antialiased`}
       >
-        {/* <Navbar /> */}
+        <Navbar />
         {children}
-        {/* <Footer /> */}
+        <Footer />
       </body>
     </html>
   );
