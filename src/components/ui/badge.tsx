@@ -8,6 +8,8 @@ const badgeVariants = cva(
   {
     variants: {
       variant: {
+        default:
+          "border-transparent bg-gray-50 text-gray-900",
         blue:
           "border-transparent bg-brand-50 text-brand-800",
         yellow:
@@ -19,7 +21,7 @@ const badgeVariants = cva(
       },
     },
     defaultVariants: {
-      variant: "blue",
+      variant: "default",
     },
   }
 )

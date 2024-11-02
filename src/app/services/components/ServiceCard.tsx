@@ -1,26 +1,43 @@
 import { Badge } from "@/components/ui/badge";
-import { ChevronDownIcon } from "@radix-ui/react-icons";
 
-export default function ServiceCard() {
-  return (
-    <div className="md:basis-[calc(50%-0.75rem)] bg-white border border-brand-100 py-6 px-5 flex items-end gap-3">
-        <div className="w-full space-y-10">
-            <Badge className="text-sm">Start from 799k</Badge>
-            <div className="space-y-3">
-                <h3 className="text-lg xl:text-[22px] font-medium">Pendirian CV</h3>
-                <div className="space-y-3">
-                    <p className="text-sm xl:text-base text-gray-700">Paket yang tersedia:</p>
-                    <div className="flex gap-2">
-                        <Badge variant="yellow" className="xl:text-sm">Jack</Badge>
-                        <Badge variant="green" className="xl:text-sm">Queen</Badge>
-                        <Badge variant="purple" className="xl:text-sm">King</Badge>
-                    </div>
-                </div>
+interface ServiceCardProps {
+    variant?: "yellow" | "green" | "purple" | "default" | "blue"
+    isLast?: boolean
+}
+
+export default function ServiceCard({variant, isLast}: ServiceCardProps) {
+    const getVariantClasses = () => {
+        switch (variant) {
+            case "yellow":
+                return "bg-brand-yellow text-brand-dark-yellow"
+            case "green":
+                return "bg-brand-green text-brand-dark-green"
+            case "purple":
+                return "bg-brand-purple text-brand-dark-purple"
+            default:
+                return "bg-gray-50 text-gray-900"
+        }
+    }
+
+    return (
+        <div className={`bg-white border border-brand-100 rounded-xl p-4 space-y-8 ${isLast && "md:max-xl:col-span-2"}`}>
+            <div className="flex flex-col items-start space-y-3">
+                <Badge variant={variant} className="text-sm">JACK</Badge>
+                <Badge className="text-sm">Proses: 8-12 Hari kerja</Badge>
+            </div>
+            <div className="space-y-3 text-sm">
+                <p>Apa yang akan kamu dapatkan: </p>
+                <ul className="list-none text-gray-700 space-y-3">
+                    <li className="before:content-['✔️'] before:tint-gray-50 before:mr-2">Pendaftaran Nama PT</li>
+                    <li className="before:content-['✔️'] before:text-gray-50 before:mr-2">Sertifikat Pendirian PT</li>
+                    <li className="before:content-['✔️'] before:text-gray-50 before:mr-2">Surat Pernyataan Pendirian PT</li>
+                    <li className="before:content-['✔️'] before:text-gray-50 before:mr-2">NPWP PT</li>
+                    <li className="before:content-['✔️'] before:text-gray-50 before:mr-2">15 KBLI Bidang Usaha</li>
+                </ul>
+            </div>
+            <div className={`grid place-items-center py-6 text-2xl ${getVariantClasses()}`}>
+                Rp799.000
             </div>
         </div>
-        <div className="shrink-0 h-10 w-10 xl:h-14 xl:w-14 grid place-items-center bg-brand-25 border border-brand-100 rounded-full">
-            <ChevronDownIcon className="text-brand-900 h-4 w-4 xl:h-6 xl:w-6"/>
-        </div>
-    </div>
-  );
+    );
 }
