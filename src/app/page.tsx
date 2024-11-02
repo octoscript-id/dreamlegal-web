@@ -1,4 +1,11 @@
 import { Button } from "@/components/ui/button";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel"
 import Image from "next/image";
 
 export default function Home() {
@@ -29,6 +36,31 @@ export default function Home() {
           <Button variant="secondary">Secondary Button</Button>
           <Button variant="link">Link Button</Button>
         </div>
+
+        <div className="flex gap-4 items-center flex-col sm:flex-row">
+          <Carousel>
+            <CarouselContent>
+              <CarouselItem>
+                <div className="flex gap-4 items-center flex-col sm:flex-row">
+                  <Button>Primary Button</Button>
+                </div>
+              </CarouselItem>
+              <CarouselItem>
+                <div className="flex gap-4 items-center flex-col sm:flex-row">
+                  <Button variant="secondary">Secondary Button</Button>
+                </div>
+              </CarouselItem>
+              <CarouselItem>
+                <div className="flex gap-4 items-center flex-col sm:flex-row">
+                  <Button variant="link">Link Button</Button>
+                </div>
+              </CarouselItem>
+            </CarouselContent>
+            <CarouselPrevious />
+            <CarouselNext />
+          </Carousel>
+        </div>
+        
       </main>
       <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
         <a
