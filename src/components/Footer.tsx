@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import Badge from "./Badge";
+import { Badge } from "@/components/ui/badge"
 
 export default function Footer() {
     const socialMedia = [
@@ -55,17 +55,15 @@ export default function Footer() {
                         <div className="flex flex-col gap-1">
                             <div className="flex flex-col gap-2 pr-3 py-2">
                                 <h4 className="text-gray-900 text-body-lg">E-mail</h4>
-                                <Badge 
-                                    text="legalitasmilikbersama@gmail.com"
-                                    className="bg-gray-100 text-gray-700 text-body-md"
-                                />
+                                <Badge>
+                                    legalitasmilikbersama@gmail.com
+                                </Badge>
                             </div>
                             <div className="flex flex-col gap-2 pr-3 py-2">
                                 <h4 className="text-gray-900 text-body-lg">Whatsapp</h4>
-                                <Badge 
-                                    text="+62 851-7000-9001"
-                                    className="bg-gray-100 text-gray-700 text-body-md"
-                                />
+                                <Badge className="w-fit">
+                                    +62 851-7000-9001
+                                </Badge>
                             </div>
                         </div>
                     </section>
