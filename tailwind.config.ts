@@ -24,7 +24,13 @@ const config: Config = {
   				'700': '#1369AE',
   				'800': '#134E86',
   				'900': '#0B3766',
-  				'950': '#04284E'
+  				'950': '#04284E',
+				"yellow": "#FEF8EC",
+				"dark-yellow": "#8F5F00",
+				"green": "#F0FBEF",
+				"dark-green": "#26631C",
+				"purple": "#F5EDFD",
+				"dark-purple": "#351254"
   			},
   			gray: {
   				'25': '#FCFCFD',
@@ -82,11 +88,11 @@ const config: Config = {
   		fontSize: {
   			'display-lg': ['64px', '80px'],
   			'display-md': ['40px', '52px'],
-			'display-sm': ['40px', '52px'],
-			'display-xs': ['32px', '40px'],
+  			'display-sm': ['40px', '52px'],
+  			'display-xs': ['32px', '40px'],
   			'heading-lg': ['22px', '30px'],
   			'heading-md': ['18px', '26px'],
-			'heading-sm': ['14px', '20px'],
+  			'heading-sm': ['14px', '20px'],
   			'body-xl': ['17px', '24px'],
   			'body-lg': ['16px', '24px'],
   			'body-md': ['14px', '20px'],
@@ -99,6 +105,28 @@ const config: Config = {
   			lg: 'var(--radius)',
   			md: 'calc(var(--radius) - 2px)',
   			sm: 'calc(var(--radius) - 4px)'
+  		},
+  		keyframes: {
+  			'accordion-down': {
+  				from: {
+  					height: '0'
+  				},
+  				to: {
+  					height: 'var(--radix-accordion-content-height)'
+  				}
+  			},
+  			'accordion-up': {
+  				from: {
+  					height: 'var(--radix-accordion-content-height)'
+  				},
+  				to: {
+  					height: '0'
+  				}
+  			}
+  		},
+  		animation: {
+  			'accordion-down': 'accordion-down 0.2s ease-out',
+  			'accordion-up': 'accordion-up 0.2s ease-out'
   		}
   	}
   },
