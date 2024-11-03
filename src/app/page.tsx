@@ -8,11 +8,13 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel"
+import Link from "next/link";
+import Image from "next/image";
 
 export default function Home() {
   return (
-    <main className="p-4 md:p-6 xl:p-12">
-      <section id="services" className="space-y-8">
+    <main className="p-4 md:p-6 xl:p-12 relative">
+      <section id="services" className="space-y-8 xl:space-y-10 relative">
         <ServiceHeader/>
         <Carousel
           opts={{
@@ -24,6 +26,7 @@ export default function Home() {
               }
             }
           }}
+          className="relative"
         >
           <CarouselContent className="max-md:flex-col max-md:gap-6">
             <CarouselItem className="md:basis-2/3 xl:basis-1/3">
@@ -39,7 +42,7 @@ export default function Home() {
               <HomeServiceCard/>
             </CarouselItem>
           </CarouselContent>
-          <div className="max-md:hidden relative mt-10">
+          <div className="max-md:hidden relative mt-10 flex justify-between">
             <CarouselPrevious />
             <CarouselNext />
           </div>
