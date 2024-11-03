@@ -8,43 +8,43 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel"
-import Image from "next/image";
 
 export default function Home() {
   return (
     <main className="p-4 md:p-6 xl:p-12">
       <section id="services" className="space-y-8">
         <ServiceHeader/>
-        <div className="max-md:space-y-6 md:flex gap-8 overflow-scroll">
-          <HomeServiceCard/>
-          <HomeServiceCard/>
-          <HomeServiceCard/>
-        </div>
-
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <Carousel>
-            <CarouselContent>
-              <CarouselItem>
-                <div className="flex gap-4 items-center flex-col sm:flex-row">
-                  <Button>Primary Button</Button>
-                </div>
-              </CarouselItem>
-              <CarouselItem>
-                <div className="flex gap-4 items-center flex-col sm:flex-row">
-                  <Button variant="secondary">Secondary Button</Button>
-                </div>
-              </CarouselItem>
-              <CarouselItem>
-                <div className="flex gap-4 items-center flex-col sm:flex-row">
-                  <Button variant="link">Link Button</Button>
-                </div>
-              </CarouselItem>
-            </CarouselContent>
+        <Carousel
+          opts={{
+            loop: true,
+            active: false,
+            breakpoints: {
+              '(min-width: 768px)': { 
+                active: true  
+              }
+            }
+          }}
+        >
+          <CarouselContent className="max-md:flex-col max-md:gap-6">
+            <CarouselItem className="md:basis-2/3 xl:basis-1/3">
+              <HomeServiceCard/>
+            </CarouselItem>
+            <CarouselItem className="md:basis-2/3 xl:basis-1/3">
+              <HomeServiceCard/>
+            </CarouselItem>
+            <CarouselItem className="md:basis-2/3 xl:basis-1/3">
+              <HomeServiceCard/>
+            </CarouselItem>
+            <CarouselItem className="md:basis-2/3 xl:basis-1/3">
+              <HomeServiceCard/>
+            </CarouselItem>
+          </CarouselContent>
+          <div className="max-md:hidden relative mt-10">
             <CarouselPrevious />
             <CarouselNext />
-          </Carousel>
-        </div>
-        
+          </div>
+        </Carousel>
+
         <Button variant="secondary" className="w-full md:hidden">Lihat semua layanan</Button>
       </section>
     </main>

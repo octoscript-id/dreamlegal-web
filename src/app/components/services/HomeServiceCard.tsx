@@ -6,7 +6,7 @@ import ServiceDialog from "./ServiceDialog";
 
 export default function HomeServiceCard() {
     return (
-        <div className="border border-brand-100 rounded-xl shrink-0 basis-2/3 xl:basis-1/3">
+        <div className="border border-brand-100 rounded-xl">
             <div className="p-5 border-b border-brand-100">
               <ServiceCardHeader />
             </div>
