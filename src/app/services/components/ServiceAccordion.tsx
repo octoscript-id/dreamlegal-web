@@ -4,7 +4,7 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion"
-import ServiceCard from "./ServiceCard";
+import ServiceCard from "../../components/services/ServiceCard";
 import ServiceCardHeader from "../../components/services/ServiceCardHeader";
 
 

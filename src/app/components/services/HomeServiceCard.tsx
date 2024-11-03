@@ -2,6 +2,7 @@
 
 import { Button } from "@/components/ui/button";
 import ServiceCardHeader from "./ServiceCardHeader";
+import ServiceDialog from "./ServiceDialog";
 
 export default function HomeServiceCard() {
     return (
@@ -10,7 +11,7 @@ export default function HomeServiceCard() {
               <ServiceCardHeader />
             </div>
             <div className="p-5">
-              <Button variant="secondary" className="w-full">Lihat detail</Button>
+              <ServiceDialog/>
             </div>
         </div>
     );

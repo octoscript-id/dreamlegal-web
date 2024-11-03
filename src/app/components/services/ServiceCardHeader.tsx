@@ -5,7 +5,7 @@ import { Badge } from "@/components/ui/badge";
 export default function ServiceCardHeader() {
     return (
         <div className="p-0 flex items-end text-start gap-3">
-            <div className="w-full space-y-10">
+            <div className="w-full space-y-6">
                 <Badge variant="blue" className="text-sm">Start from 799k</Badge>
                 <div className="space-y-3">
                     <h3 className="text-lg xl:text-[22px] font-medium">Pendirian CV</h3>
