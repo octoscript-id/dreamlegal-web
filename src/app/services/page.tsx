@@ -1,4 +1,4 @@
-import ServicesHeader from "../components/services/ServicesHeader";
+import ServicesHeader from "../../components/services/ServicesHeader";
 import ServiceCategory from "./components/ServiceCategory";
 
 
