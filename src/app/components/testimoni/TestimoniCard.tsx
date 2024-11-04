@@ -6,7 +6,7 @@ export default function TestimoniCard() {
         <div className="py-5 px-4 border border-brand-100 rounded-xl space-y-6">
             <div className="flex gap-2">
                 {Array.from({ length: 5 }).map((_, index) => (
-                    <StarFilledIcon width={20} height={20} className="text-brand-800" />
+                    <StarFilledIcon key={index} width={20} height={20} className="text-brand-800" />
                 ))}
             </div>
             <div className="space-y-2">
