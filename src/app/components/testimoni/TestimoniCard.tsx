@@ -9,7 +9,7 @@ export default function TestimoniCard() {
                     <StarFilledIcon width={20} height={20} className="text-brand-800" />
                 ))}
             </div>
-            <div className="space-y-2">
+            <div className="space-y-2 xl:text-lg">
                 <h3 className="font-medium">Lorem Ipsum is simply</h3>
                 <p className="text-sm text-gray-700">“Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.”</p>
             </div>
