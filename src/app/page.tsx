@@ -1,114 +1,90 @@
+import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import {
-  Carousel,
-  CarouselContent,
-  CarouselItem,
-  CarouselNext,
-  CarouselPrevious,
-} from "@/components/ui/carousel"
 import Image from "next/image";
 
 export default function Home() {
+  const testimonyCompanyLogos = [
+    '/img/Png 2.png',
+    '/img/Png 2.png',
+    '/img/Png 2.png',
+    '/img/Png 2.png',
+    '/img/Png 2.png',
+    '/img/Png 2.png',
+    '/img/Png 2.png',
+    '/img/Png 2.png',
+    '/img/Png 2.png',
+    '/img/Png 2.png',
+    '/img/Png 2.png',
+    '/img/Png 2.png',
+  ]
+  
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
-
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <Button>Primary Button</Button>
-          <Button variant="secondary">Secondary Button</Button>
-          <Button variant="link">Link Button</Button>
-        </div>
-
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <Carousel>
-            <CarouselContent>
-              <CarouselItem>
-                <div className="flex gap-4 items-center flex-col sm:flex-row">
-                  <Button>Primary Button</Button>
-                </div>
-              </CarouselItem>
-              <CarouselItem>
-                <div className="flex gap-4 items-center flex-col sm:flex-row">
-                  <Button variant="secondary">Secondary Button</Button>
-                </div>
-              </CarouselItem>
-              <CarouselItem>
-                <div className="flex gap-4 items-center flex-col sm:flex-row">
-                  <Button variant="link">Link Button</Button>
-                </div>
-              </CarouselItem>
-            </CarouselContent>
-            <CarouselPrevious />
-            <CarouselNext />
-          </Carousel>
-        </div>
-        
-      </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
+    <main className="p-4 md:p-6 xl:p-12 relative">
+      <section id="hero-banner" className="flex flex-col gap-10 items-center md:items-start lg:flex-row lg:justify-between w-full">
+        <section className="flex flex-col justify-between max-w-md">
+          <section className="flex flex-col items-center md:items-start gap-4">
+            <Badge variant="blue" className="w-fit">
+              Dream Legal
+            </Badge>
+            <h1 className="font-display text-display-sm md:text-display-md lg:text-display-lg text-center md:text-left">
+              <span className="text-brand-700">Legal Partner</span> For Your Business
+            </h1>
+            <p className="text-body-xl text-center md:text-left">
+              Start your business with Dream Legal -- Penyedia jasa legal online untuk membantu Anda memulai bisnis di Indonesia.
+            </p>
+            <Button className="w-fit hidden md:block">
+              Konsultasi sekarang
+            </Button>
+          </section>
+        </section>
+        <section className="flex items-center gap-3">
+          <section className="flex flex-col gap-3">
+            <Image 
+              src="/img/unsplash/image_1.png"
+              alt="Unsplash Image 1"
+              width={325}
+              height={325}
+            />
+            <Image 
+              src="/img/unsplash/image_2.png"
+              alt="Unsplash Image 2"
+              width={325}
+              height={325}
+            />
+          </section>
+          <Image 
+            src="/img/unsplash/image_3.png"
+            alt="Unsplash Image 3"
+            width={325}
+            height={560}
           />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
+        </section>
+        <Button className="md:hidden w-full">
+          Konsultasi sekarang
+        </Button>
+      </section>
+      <section id="testimony" className="flex flex-col items-center my-16">
+        <h3 className="text-heading-md text-gray-700">Telah dipercaya oleh:</h3>
+        <section className="overflow-hidden whitespace-nowrap">
+          <section className="animate-scroll flex items-center justify-center gap-14">
+            {
+              testimonyCompanyLogos.concat(testimonyCompanyLogos).map((logo, key) => {
+                const logoSplit = logo.split("/")
+                const companyName = logoSplit[logoSplit.length-1].split(".")[0]
+                return (
+                  <Image 
+                    key={key}
+                    src={logo}
+                    alt={companyName}
+                    width={100}
+                    height={100}
+                  />
+                )
+              })
+            }
+          </section>
+        </section>
+      </section>
+    </main>
   );
 }
