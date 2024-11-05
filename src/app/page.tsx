@@ -37,26 +37,27 @@ export default function Home() {
             </Button>
           </section>
         </section>
-        <section className="flex items-center gap-3">
-          <section className="flex flex-col gap-3">
-            <Image 
-              src="/img/unsplash/image_1.png"
-              alt="Unsplash Image 1"
-              width={325}
-              height={325}
-            />
-            <Image 
-              src="/img/unsplash/image_2.png"
-              alt="Unsplash Image 2"
-              width={325}
-              height={325}
-            />
-          </section>
+        <section className="grid grid-rows-2 grid-flow-col gap-3">
+          <Image 
+            src="/img/unsplash/image_1.png"
+            alt="Unsplash Image 1"
+            width={325}
+            height={325}
+            className=""
+          />
+          <Image 
+            src="/img/unsplash/image_2.png"
+            alt="Unsplash Image 2"
+            width={325}
+            height={325}
+            className=""
+          />
           <Image 
             src="/img/unsplash/image_3.png"
             alt="Unsplash Image 3"
             width={325}
             height={560}
+            className="row-span-2"
           />
         </section>
         <Button className="md:hidden w-full">
@@ -65,7 +66,7 @@ export default function Home() {
       </section>
       <section id="testimony" className="flex flex-col items-center my-16">
         <h3 className="text-heading-md text-gray-700">Telah dipercaya oleh:</h3>
-        <section className="overflow-hidden whitespace-nowrap">
+        <section className="overflow-hidden whitespace-nowrap max-w-full">
           <section className="animate-scroll flex items-center justify-center gap-14">
             {
               testimonyCompanyLogos.concat(testimonyCompanyLogos).map((logo, key) => {
