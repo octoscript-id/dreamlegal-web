@@ -1,3 +1,5 @@
+import ServiceHeader from "./components/services/ServiceHeader";
+import HomeServiceCard from "./components/services/HomeServiceCard";
 import { Button } from "@/components/ui/button";
 import {
   Carousel,
@@ -6,109 +8,48 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel"
+import Link from "next/link";
 import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
-
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <Button>Primary Button</Button>
-          <Button variant="secondary">Secondary Button</Button>
-          <Button variant="link">Link Button</Button>
-        </div>
-
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <Carousel>
-            <CarouselContent>
-              <CarouselItem>
-                <div className="flex gap-4 items-center flex-col sm:flex-row">
-                  <Button>Primary Button</Button>
-                </div>
-              </CarouselItem>
-              <CarouselItem>
-                <div className="flex gap-4 items-center flex-col sm:flex-row">
-                  <Button variant="secondary">Secondary Button</Button>
-                </div>
-              </CarouselItem>
-              <CarouselItem>
-                <div className="flex gap-4 items-center flex-col sm:flex-row">
-                  <Button variant="link">Link Button</Button>
-                </div>
-              </CarouselItem>
-            </CarouselContent>
+    <main className="p-4 md:p-6 xl:p-12 relative">
+      <section id="services" className="space-y-8 xl:space-y-10 relative">
+        <ServiceHeader/>
+        <Carousel
+          opts={{
+            loop: true,
+            active: false,
+            breakpoints: {
+              '(min-width: 768px)': { 
+                active: true  
+              }
+            }
+          }}
+          className="relative"
+        >
+          <CarouselContent className="max-md:flex-col max-md:gap-6">
+            <CarouselItem className="md:basis-2/3 xl:basis-1/3">
+              <HomeServiceCard/>
+            </CarouselItem>
+            <CarouselItem className="md:basis-2/3 xl:basis-1/3">
+              <HomeServiceCard/>
+            </CarouselItem>
+            <CarouselItem className="md:basis-2/3 xl:basis-1/3">
+              <HomeServiceCard/>
+            </CarouselItem>
+            <CarouselItem className="md:basis-2/3 xl:basis-1/3">
+              <HomeServiceCard/>
+            </CarouselItem>
+          </CarouselContent>
+          <div className="max-md:hidden relative mt-10 flex justify-between">
             <CarouselPrevious />
             <CarouselNext />
-          </Carousel>
-        </div>
-        
-      </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
+          </div>
+        </Carousel>
+
+        <Button variant="secondary" className="w-full md:hidden">Lihat semua layanan</Button>
+      </section>
+    </main>
   );
 }
