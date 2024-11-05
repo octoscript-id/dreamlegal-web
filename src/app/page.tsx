@@ -1,52 +1,18 @@
+import ServiceSection from "./components/services/ServiceSection";
 import { Button } from "@/components/ui/button";
-import {
-  Carousel,
-  CarouselContent,
-  CarouselItem,
-  CarouselNext,
-  CarouselPrevious,
-} from "@/components/ui/carousel";
-import HomeServiceCard from "./components/services/HomeServiceCard";
-import ServiceHeader from "./components/services/ServiceHeader";
+import TestimoniSection from "./components/testimoni/TestimoniSection";
 
 export default function Home() {
   return (
-    <main className="p-4 md:p-6 xl:p-12 relative">
-      <section id="services" className="space-y-8 xl:space-y-10 relative">
-        <ServiceHeader/>
-        <Carousel
-          opts={{
-            loop: true,
-            active: false,
-            breakpoints: {
-              '(min-width: 768px)': { 
-                active: true  
-              }
-            }
-          }}
-          className="relative"
-        >
-          <CarouselContent className="max-md:flex-col max-md:gap-6">
-            <CarouselItem className="md:basis-2/3 xl:basis-1/3">
-              <HomeServiceCard/>
-            </CarouselItem>
-            <CarouselItem className="md:basis-2/3 xl:basis-1/3">
-              <HomeServiceCard/>
-            </CarouselItem>
-            <CarouselItem className="md:basis-2/3 xl:basis-1/3">
-              <HomeServiceCard/>
-            </CarouselItem>
-            <CarouselItem className="md:basis-2/3 xl:basis-1/3">
-              <HomeServiceCard/>
-            </CarouselItem>
-          </CarouselContent>
-          <div className="max-md:hidden relative mt-10 flex justify-between">
-            <CarouselPrevious />
-            <CarouselNext />
-          </div>
-        </Carousel>
-
-        <Button variant="secondary" className="w-full md:hidden">Lihat semua layanan</Button>
+    <main className="px-4 md:px-6 xl:px-12 relative">
+      <ServiceSection />
+      <TestimoniSection />
+      <section id="cta" className="-mx-4 md:-mx-6 xl:-mx-12 bg-brand-25 space-y-8 md:space-y-10 xl:space-y-14 py-12 md:py-14 xl:py-[120px] px-4 md:px-6 xl:px-12 text-center">
+        <div className="space-y-3 max-w-2xl mx-auto">
+          <h2 className="text-[28px] md:text-[32px] xl:text-[40px]">Memerlukan Layanan Hukum?</h2>
+          <p>Konsultasikan kebutuhan legal kamu sekarang -Hubungi kami melalui whatsapp</p>
+        </div>
+        <Button className="max-md:w-full py-6 md:py-8 md:px-16 rounded-full xl:text-lg">Hubungi melalui whatsapp</Button>
       </section>
     </main>
   );
