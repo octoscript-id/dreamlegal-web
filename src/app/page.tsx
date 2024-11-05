@@ -1,5 +1,3 @@
-import ServiceHeader from "./components/services/ServiceHeader";
-import HomeServiceCard from "./components/services/HomeServiceCard";
 import { Button } from "@/components/ui/button";
 import {
   Carousel,
@@ -7,9 +5,9 @@ import {
   CarouselItem,
   CarouselNext,
   CarouselPrevious,
-} from "@/components/ui/carousel"
-import Link from "next/link";
-import Image from "next/image";
+} from "@/components/ui/carousel";
+import HomeServiceCard from "./components/services/HomeServiceCard";
+import ServiceHeader from "./components/services/ServiceHeader";
 
 export default function Home() {
   return (
