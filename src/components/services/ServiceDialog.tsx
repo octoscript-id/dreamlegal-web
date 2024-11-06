@@ -2,18 +2,14 @@ import {
   Dialog,
   DialogClose,
   DialogContent,
-  DialogDescription,
-  DialogHeader,
   DialogTitle,
-  DialogTrigger,
-} from "@/components/ui/dialog"
-import HomeServiceCard from "./HomeServiceCard";
-import { Button } from "@/components/ui/button";
-import ServiceCardHeader from "./ServiceCardHeader";
-import { ChevronDownIcon, Cross1Icon } from "@radix-ui/react-icons";
+  DialogTrigger
+} from "@/components/ui/dialog";
+import { ScrollArea } from "@/components/ui/scroll-area";
+import { Cross1Icon } from "@radix-ui/react-icons";
 import { VisuallyHidden } from "@radix-ui/react-visually-hidden";
 import ServiceCard from "./ServiceCard";
-import { ScrollArea } from "@/components/ui/scroll-area";
+import ServiceCardHeader from "./ServiceCardHeader";
 
 
 export default function ServiceDialog() {

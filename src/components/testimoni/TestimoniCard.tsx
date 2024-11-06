@@ -11,7 +11,7 @@ export default function TestimoniCard() {
             </div>
             <div className="space-y-2">
                 <h3 className="font-medium xl:text-lg">Lorem Ipsum is simply</h3>
-                <p className="text-sm text-gray-700">“Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry`&apos`s standard dummy text ever since the 1500s.”</p>
+                <p className="text-sm text-gray-700">“Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&apos;s standard dummy text ever since the 1500s.”</p>
             </div>
             <div className="flex gap-2">
                 <div className="h-10 w-10 relative">

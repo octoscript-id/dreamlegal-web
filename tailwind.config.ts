@@ -122,11 +122,20 @@ const config: Config = {
   				to: {
   					height: '0'
   				}
-  			}
+  			},
+			'scroll': {
+				from: {
+					transform: 'translateX(0)',
+				},
+				to: {
+					transform: 'translateX(-50%)',
+				}
+			}
   		},
   		animation: {
   			'accordion-down': 'accordion-down 0.2s ease-out',
-  			'accordion-up': 'accordion-up 0.2s ease-out'
+  			'accordion-up': 'accordion-up 0.2s ease-out',
+			'scroll': 'scroll 15s linear infinite',
   		}
   	}
   },
