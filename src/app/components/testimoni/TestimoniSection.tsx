@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
+import { Carousel, CarouselContent, CarouselItem } from "@/components/ui/carousel";
 import TestimoniCard from "./TestimoniCard";
 
 export default function TestimoniSection() {
