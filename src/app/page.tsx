@@ -25,7 +25,6 @@ export default function Home() {
   
   return (
     <main className="px-4 md:px-6 xl:px-12 relative">
-      <BenefitSection />
       <section id="hero-banner" className="flex flex-col gap-10 items-center md:items-start lg:flex-row lg:justify-between w-full">
         <section className="flex flex-col justify-between max-w-md">
           <section className="flex flex-col items-center md:items-start gap-4">
@@ -92,6 +91,7 @@ export default function Home() {
           </section>
         </section>
       </section>
+      <BenefitSection />
       <ServiceSection />
       <AlurSection />
       <TestimoniSection />
