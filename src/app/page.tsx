@@ -45,27 +45,27 @@ export default function Home() {
             </Button>
           </section>
         </section>
-        <section className="grid grid-rows-2 grid-flow-col gap-3">
+        <section className="grid grid-rows-2 grid-flow-col gap-3 w-full lg:w-fit">
           <Image 
             src="/img/unsplash/image_1.png"
             alt="Unsplash Image 1"
             width={325}
             height={325}
-            className=""
+            className="w-full"
           />
           <Image 
             src="/img/unsplash/image_2.png"
             alt="Unsplash Image 2"
             width={325}
             height={325}
-            className=""
+            className="w-full"
           />
           <Image 
             src="/img/unsplash/image_3.png"
             alt="Unsplash Image 3"
             width={325}
             height={560}
-            className="row-span-2"
+            className="row-span-2 w-full"
           />
         </section>
         <Button className="md:hidden w-full">

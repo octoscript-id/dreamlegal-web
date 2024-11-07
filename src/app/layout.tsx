@@ -32,7 +32,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${LibreBaskerville.className} ${PlusJakartaSans.className} antialiased`}
+        className={`${LibreBaskerville.className} ${PlusJakartaSans.className} antialiased scroll-smooth`}
       >
         <WhatsappFloatingButton />
         <Navbar />
