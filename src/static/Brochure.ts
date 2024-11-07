@@ -1,0 +1,1 @@
+export const SERVICE_BROCHURE_URL = "https://drive.google.com/file/d/1FfECT6rGO-hc5flJuUrPny_Mm8ZFYR_-/view?usp=sharing"

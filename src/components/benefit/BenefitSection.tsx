@@ -1,5 +1,8 @@
+"use client"
 import { Button } from "@/components/ui/button";
 import BenefitCard from "./BenefitCard";
+import { sendWhatsappMessage } from "@/lib/sendWhatsappMessage";
+import { CONTACT_MESSAGE, CONTACT_NUMBER } from "@/static/Contact";
 
 export default function BenefitSection() {
     return (
@@ -9,7 +12,7 @@ export default function BenefitSection() {
             <h2 className="text-[28px] md:text-[32px] xl:text-[40px]">Kenapa Harus Memilih Dream Legal?</h2>
             <p className="text-gray-700 max-w-xl">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
           </div>
-          <Button variant="secondary" className="max-md:hidden">Konsultasi sekarang</Button>
+          <Button onClick={() => sendWhatsappMessage(CONTACT_NUMBER, CONTACT_MESSAGE)} variant="secondary" className="max-md:hidden">Konsultasi sekarang</Button>
         </div>
         <div className="max-md:space-y-10 md:grid grid-cols-3 gap-8 xl:gap-14">
           <BenefitCard />

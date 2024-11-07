@@ -1,3 +1,4 @@
+"use client"
 import AlurSection from "@/components/alur/AlurSection";
 import CtaSection from "@/components/cta/CtaSection";
 import BenefitSection from "@/components/benefit/BenefitSection";
@@ -6,6 +7,8 @@ import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import ServiceSection from "@/components/services/ServiceSection";
 import TestimoniSection from "@/components/testimoni/TestimoniSection";
+import { sendWhatsappMessage } from "@/lib/sendWhatsappMessage";
+import { CONTACT_MESSAGE, CONTACT_NUMBER } from "@/static/Contact";
 
 export default function Home() {
   const testimonyCompanyLogos = [
@@ -37,7 +40,7 @@ export default function Home() {
             <p className="text-body-xl text-center md:text-left">
               Start your business with Dream Legal -- Penyedia jasa legal online untuk membantu Anda memulai bisnis di Indonesia.
             </p>
-            <Button className="w-fit hidden md:block">
+            <Button onClick={() => sendWhatsappMessage(CONTACT_NUMBER, CONTACT_MESSAGE)} className="w-fit hidden md:block">
               Konsultasi sekarang
             </Button>
           </section>

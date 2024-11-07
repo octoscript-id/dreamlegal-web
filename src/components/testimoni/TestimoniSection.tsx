@@ -1,6 +1,8 @@
 import { Button } from "@/components/ui/button";
 import { Carousel, CarouselContent, CarouselItem } from "@/components/ui/carousel";
 import TestimoniCard from "./TestimoniCard";
+import { sendWhatsappMessage } from "@/lib/sendWhatsappMessage";
+import { CONTACT_MESSAGE, CONTACT_NUMBER } from "@/static/Contact";
 
 export default function TestimoniSection() {
     return (
@@ -10,7 +12,7 @@ export default function TestimoniSection() {
             <h2 className="text-[28px] md:text-[32px] xl:text-[40px]">Apa Kata Mereka Tentang Dream Legal?</h2>
             <p className="text-gray-700">Dream Legal telah dipercaya sebagai legal partner oleh banyak korporasi dan UMKM di Indonesia.</p>
           </div>
-          <Button variant="secondary" className="max-md:hidden max-xl:text-sm">Konsultasi sekarang</Button>
+          <Button onClick={() => sendWhatsappMessage(CONTACT_NUMBER, CONTACT_MESSAGE)} variant="secondary" className="max-md:hidden max-xl:text-sm">Konsultasi sekarang</Button>
         </div>
         <Carousel
           opts={{
