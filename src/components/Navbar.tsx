@@ -6,19 +6,19 @@ export default function Navbar() {
     const links = [
         {
             text: 'Benefit',
-            href: '/',
+            href: '/#benefit',
         },
         {
             text: 'Layanan',
-            href: '/',
+            href: '/services',
         },
         {
             text: 'Alur Kerja',
-            href: '/',
+            href: '/#alur',
         },
         {
             text: 'Testimoni',
-            href: '/',
+            href: '/#testimoni',
         },
     ]
 

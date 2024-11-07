@@ -3,7 +3,7 @@ import BenefitCard from "./BenefitCard";
 
 export default function BenefitSection() {
     return (
-      <section id="alur" className="py-12 md:py-14 xl:[py-120px] space-y-12 xl:space-y-14">
+      <section id="benefit" className="py-12 md:py-14 xl:[py-120px] space-y-12 xl:space-y-14">
         <div className="max-md:space-y-8 md:flex justify-between items-end gap-16">
           <div className="space-y-3">
             <h2 className="text-[28px] md:text-[32px] xl:text-[40px]">Kenapa Harus Memilih Dream Legal?</h2>
