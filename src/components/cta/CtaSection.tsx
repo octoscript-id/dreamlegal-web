@@ -1,4 +1,6 @@
 import { Button } from "@/components/ui/button";
+import { sendWhatsappMessage } from "@/lib/sendWhatsappMessage";
+import { CONTACT_MESSAGE, CONTACT_NUMBER } from "@/static/Contact";
 
 export default function CtaSection() {
     return (
@@ -7,7 +9,7 @@ export default function CtaSection() {
           <h2 className="text-[28px] md:text-[32px] xl:text-[40px]">Memerlukan Layanan Hukum?</h2>
           <p className="text-gray-700">Konsultasikan kebutuhan legal kamu sekarang -Hubungi kami melalui whatsapp</p>
         </div>
-        <Button className="max-md:w-full py-6 md:py-8 md:px-16 rounded-full xl:text-lg">Hubungi melalui whatsapp</Button>
+        <Button onClick={() => sendWhatsappMessage(CONTACT_NUMBER, CONTACT_MESSAGE)} className="max-md:w-full py-6 md:py-8 md:px-16 rounded-full xl:text-lg">Hubungi melalui whatsapp</Button>
       </section>
     );
 }

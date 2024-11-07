@@ -1,3 +1,4 @@
+"use client"
 import AlurSection from "@/components/alur/AlurSection";
 import CtaSection from "@/components/cta/CtaSection";
 import BenefitSection from "@/components/benefit/BenefitSection";
@@ -6,6 +7,8 @@ import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import ServiceSection from "@/components/services/ServiceSection";
 import TestimoniSection from "@/components/testimoni/TestimoniSection";
+import { sendWhatsappMessage } from "@/lib/sendWhatsappMessage";
+import { CONTACT_MESSAGE, CONTACT_NUMBER } from "@/static/Contact";
 
 export default function Home() {
   const testimonyCompanyLogos = [
@@ -37,32 +40,32 @@ export default function Home() {
             <p className="text-body-xl text-center md:text-left">
               Start your business with Dream Legal -- Penyedia jasa legal online untuk membantu Anda memulai bisnis di Indonesia.
             </p>
-            <Button className="w-fit hidden md:block">
+            <Button onClick={() => sendWhatsappMessage(CONTACT_NUMBER, CONTACT_MESSAGE)} className="w-fit hidden md:block">
               Konsultasi sekarang
             </Button>
           </section>
         </section>
-        <section className="grid grid-rows-2 grid-flow-col gap-3">
+        <section className="grid grid-rows-2 grid-flow-col gap-3 w-full lg:w-fit">
           <Image 
             src="/img/unsplash/image_1.png"
             alt="Unsplash Image 1"
             width={325}
             height={325}
-            className=""
+            className="w-full"
           />
           <Image 
             src="/img/unsplash/image_2.png"
             alt="Unsplash Image 2"
             width={325}
             height={325}
-            className=""
+            className="w-full"
           />
           <Image 
             src="/img/unsplash/image_3.png"
             alt="Unsplash Image 3"
             width={325}
             height={560}
-            className="row-span-2"
+            className="row-span-2 w-full"
           />
         </section>
         <Button className="md:hidden w-full">
