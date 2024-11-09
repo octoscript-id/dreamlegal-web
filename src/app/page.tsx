@@ -79,7 +79,7 @@ export default function Home() {
           </section>
         </section>
       </section>
-      <BenefitSection />
+      <BenefitSection benefits={data.benefits} />
       <ServiceSection />
       <AlurSection />
       <TestimoniSection />
