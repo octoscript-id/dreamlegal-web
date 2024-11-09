@@ -6,26 +6,12 @@ import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import ServiceSection from "@/components/services/ServiceSection";
 import TestimoniSection from "@/components/testimoni/TestimoniSection";
+import data from "../data/data.json"
 
 export default function Home() {
-  const testimonyCompanyLogos = [
-    '/img/Png 2.png',
-    '/img/Png 2.png',
-    '/img/Png 2.png',
-    '/img/Png 2.png',
-    '/img/Png 2.png',
-    '/img/Png 2.png',
-    '/img/Png 2.png',
-    '/img/Png 2.png',
-    '/img/Png 2.png',
-    '/img/Png 2.png',
-    '/img/Png 2.png',
-    '/img/Png 2.png',
-  ]
-  
   return (
     <main className="px-4 md:px-6 xl:px-12 relative">
-      <section id="hero-banner" className="flex flex-col gap-10 items-center md:items-start lg:flex-row lg:justify-between w-full">
+      <section id="hero-banner" className="pt-6 xl:pt-12 pb-12 md:pb-14 xl:pb-[72px] flex flex-col gap-10 items-center md:items-start lg:flex-row lg:justify-between w-full">
         <section className="flex flex-col justify-between max-w-md">
           <section className="flex flex-col items-center md:items-start gap-4">
             <Badge variant="blue" className="w-fit">
@@ -69,21 +55,23 @@ export default function Home() {
           Konsultasi sekarang
         </Button>
       </section>
-      <section id="testimony" className="flex flex-col items-center my-16">
+      <section id="testimony" className="-mx-4 md:-mx-6 xl:-mx-12 px-4 md:px-6 xl:px-12 bg-brand-25 text-center py-12 xl:py-[72px] space-y-4 md:space-y-6 xl:space-y-8">
         <h3 className="text-heading-md text-gray-700">Telah dipercaya oleh:</h3>
-        <section className="overflow-hidden whitespace-nowrap max-w-full">
-          <section className="animate-scroll flex items-center justify-center gap-14">
+        <section className="overflow-hidden whitespace-nowrap w-full">
+          <section className="animate-scroll flex items-center justify-center gap-14 h-8 md:h-10 xl:h-14">
             {
-              testimonyCompanyLogos.concat(testimonyCompanyLogos).map((logo, key) => {
-                const logoSplit = logo.split("/")
-                const companyName = logoSplit[logoSplit.length-1].split(".")[0]
+              data.companyLogos.map((logo) => {
                 return (
                   <Image 
-                    key={key}
-                    src={logo}
-                    alt={companyName}
-                    width={100}
-                    height={100}
+                    key={logo.id}
+                    src={`/img/companies/${logo.logoUrl}`}
+                    alt={logo.altText}
+                    style={{
+                      width: 'auto',
+                      height: '100%',
+                    }}
+                    width={logo.width}
+                    height={logo.height}
                   />
                 )
               })
