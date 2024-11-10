@@ -1,6 +1,6 @@
-export type Benefit = {
+export type Step = {
     id: number;
-    benefit: string;
+    title: string;
     description: string;
     image: string
 };

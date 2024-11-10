@@ -1,12 +1,13 @@
-import AlurSection from "@/components/alur/AlurSection";
 import CtaSection from "@/components/cta/CtaSection";
 import BenefitSection from "@/components/benefit/BenefitSection";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import ServiceSection from "@/components/services/ServiceSection";
-import TestimoniSection from "@/components/testimoni/TestimoniSection";
+import TestimoniSection from "@/components/testimoni/TestimoniesSection";
 import data from "../data/data.json"
+import { Service } from "@/types/Service";
+import ProcedureSection from "@/components/procedure/ProcedureSection";
 
 export default function Home() {
   return (
@@ -80,9 +81,9 @@ export default function Home() {
         </section>
       </section>
       <BenefitSection benefits={data.benefits} />
-      <ServiceSection />
-      <AlurSection />
-      <TestimoniSection />
+      <ServiceSection services={data.services.flatMap((service) => service.services as Service[])}/>
+      <ProcedureSection steps={data.steps}/>
+      <TestimoniSection testimonies={data.testimonies}/>
       <CtaSection />
     </main>
   );

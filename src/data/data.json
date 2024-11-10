@@ -44,31 +44,38 @@
     "benefits": [
         {
             "id": 1,
-            "benefit": "Profesional",
-            "number": ">120",
-            "unit": "Klien",
-            "description": "Telah menangani korporasi maupun  UMKM dengan ketepatan waktu di atas 85% dan waktu respon yang cepat untuk melayani Anda.",
+            "benefit": "Mudah",
+            "description": "Pengurusan Legalitas Usaha Mudah",
             "image": "alur-dummy-1.jpeg"
         },
         {
             "id": 2,
-            "benefit": "Terjangkau",
-            "number": "1.5",
-            "unit": "x",
-            "description": "Harga lebih terjangkau dan kompetitif tanpa mengurangi kualitas layanan yang diberikan oleh Dream Legal.",
+            "benefit": "Efisiensi Waktu",
+            "description": "Pengurusan Legalitas Usaha prosesnya cepat",
             "image": "alur-dummy-2.jpeg"
         },
         {
             "id": 3,
-            "benefit": "Area layanan luas",
-            "number": ">72",
-            "unit": "Kota",
-            "description": "Jangkauan layanan yang luas dan dapat online, memungkinkan Anda mengelola legalitas hukum dimana saja.",
+            "benefit": "Terjangkau",
+            "description": "Biaya pengurusan yang terjangkau",
             "image": "alur-dummy-3.jpeg"
+        },
+        {
+            "id": 4,
+            "benefit": "Fleksibel",
+            "description": "Pelayanan Konsultasi sesuai kebutuhan klien",
+            "image": "alur-dummy-1.jpeg"
+        },
+        {
+            "id": 5,
+            "benefit": "Aman",
+            "description": "Kerahasiaan dan Perlindungan Data Pribadi/Perusahaan terjaga",
+            "image": "alur-dummy-2.jpeg"
         }
     ],
     "services": [
         {
+            "id": 1,
             "category": "Pendirian Usaha",
             "services": [
                 {
@@ -643,42 +650,44 @@
             ]
         },
         {
-            "id": 12,
-            "title": "Perubahan PT Perseroan",
-            "options": [
-                {
-                    "package": "Perubahan Akta",
-                    "price": 4999000,
-                    "features": [
-                        "Akta Perubahan PT",
-                        "SK/SP Perubahan PT",
-                        "Perubahan Data NIB",
-                        "15 KBLI Bidang Usaha"
-                    ]
-                },
-                {
-                    "package": "Akuisisi",
-                    "price": 5499000,
-                    "features": [
-                        "Pengumuman Koran",
-                        "Akta Perubahan PT",
-                        "SK/SP Perubahan PT",
-                        "Perubahan Data NIB",
-                        "15 KBLI Bidang Usaha"
-                    ]
-                },
-                {
-                    "package": "Jual Beli Saham",
-                    "price": 1499000,
-                    "features": [
-                        "Akta Jual Beli Saham"
-                    ]
-                }
-            ]
-        },
-        {
+            "id": 2,
             "category": "Perubahan Usaha",
             "services": [
+                {
+                    "id": 12,
+                    "title": "Perubahan PT Perseroan",
+                    "options": [
+                        {
+                            "package": "Perubahan Akta",
+                            "price": 4999000,
+                            "features": [
+                                "Akta Perubahan PT",
+                                "SK/SP Perubahan PT",
+                                "Perubahan Data NIB",
+                                "15 KBLI Bidang Usaha"
+                            ]
+                        },
+                        {
+                            "package": "Akuisisi",
+                            "price": 5499000,
+                            "features": [
+                                "Pengumuman Koran",
+                                "Akta Perubahan PT",
+                                "SK/SP Perubahan PT",
+                                "Perubahan Data NIB",
+                                "15 KBLI Bidang Usaha"
+                            ]
+                        },
+                        {
+                            "package": "Jual Beli Saham",
+                            "price": 1499000,
+                            "features": [
+                                "Akta Jual Beli Saham"
+                            ]
+                        }
+                    ],
+                    "is_highlighted": false
+                },
                 {
                     "id": 13,
                     "title": "Perubahan PT PMA",
@@ -746,6 +755,7 @@
             ]
         },
         {
+            "id": 3,
             "category": "Pembubaran Usaha",
             "services": [
                 {
@@ -809,6 +819,7 @@
             ]
         },
         {
+            "id": 4,
             "category": "Kelengkapan Usaha",
             "services": [
                 {
@@ -888,6 +899,7 @@
             ]
         },
         {
+            "id": 5,
             "category": "Kekayaan Intelektual",
             "services": [
                 {
@@ -913,17 +925,17 @@
                             "duration": "1 Hari Kerja"
                         },
                         {
-                            "package": "Perpanjang Merek",
-                            "price": [
-                            {
-                                "condition": "Sebelum Exp",
-                                "price": 3099000
-                            },
-                            {
-                                "condition": "Sesudah Exp",
-                                "price": 5299000
-                            }  
+                            "package": "Perpanjang Merek (Sebelum Exp)",
+                            "price": 3099000,
+                            "features": [
+                                "Bukti Perpanjangan Merek",
+                                "Softcopy Sertifikat Perpanjangan Merek"
                             ],
+                            "duration": "5 Hari Kerja"
+                        },
+                        {
+                            "package": "Perpanjang Merek (Setelah Exp)",
+                            "price": 5299000,
                             "features": [
                                 "Bukti Perpanjangan Merek",
                                 "Softcopy Sertifikat Perpanjangan Merek"
@@ -994,6 +1006,7 @@
             ]
         },
         {
+            "id": 6,
             "category": "Pajak Usaha",
             "services": [
                 {
@@ -1057,68 +1070,82 @@
             ]
         }
     ],
-    "alur": [
+    "steps": [
         {
             "id": 1,
             "title": "Pilih Jasa",
-            "description": "⁠Klien bisa memilih jasa apa yang akan digunakan"
+            "description": "⁠Klien bisa memilih jasa apa yang akan digunakan",
+            "image": "alur-dummy-1.jpeg"
         },
         {
             "id": 2,
             "title": "Konsultasi",
-            "description": "Jika dirasa kebingungan, anda bisa menghubungi kami via WhatsApp untuk melakukan konsultasi secara gratis"
+            "description": "Jika dirasa kebingungan, anda bisa menghubungi kami via WhatsApp untuk melakukan konsultasi secara gratis",
+            "image": "alur-dummy-2.jpeg"
         },
         {
             "id": 3,
             "title": "Booking Fee",
-            "description": "Jika sudah ditentukan, klien bisa melakukan Booking Fee agar proses bisa dilanjutkan"
+            "description": "Jika sudah ditentukan, klien bisa melakukan Booking Fee agar proses bisa dilanjutkan",
+            "image": "alur-dummy-3.jpeg"
         },
         {
             "id": 4,
             "title": "Follow Up",
-            "description": "⁠Selanjutnya klien akan dihubungkan dengan Staff Legal yang akan membantu proses yang dibutuhkan"
+            "description": "⁠Selanjutnya klien akan dihubungkan dengan Staff Legal yang akan membantu proses yang dibutuhkan",
+            "image": "alur-dummy-1.jpeg"
         }
     ],
     "testimonies": [
         {
             "id": 1,
-            "name": "John Doe",
             "title": "Highly Recommended",
             "testimonial": "This company has provided excellent service and support. Highly recommended!",
-            "position": "CEO, Company X",
-            "photoUrl": "profile-dummy.jpeg"
+            "profile": {
+                "name": "John Doe",
+                "position": "CEO, Company X",
+                "photoUrl": "profile-dummy.jpeg"
+            }
         },
         {
             "id": 2,
-            "name": "Jane Smith",
             "title": "Amazing Experience!",
             "testimonial": "Amazing experience! The team was responsive and delivered quality results.",
-            "position": "Manager, Company Y",
-            "photoUrl": "profile-dummy.jpeg"
+            "profile": {
+                "name": "Jane Smith",
+                "position": "Manager, Company Y",
+                "photoUrl": "profile-dummy.jpeg"
+            }
         },
         {
             "id": 3,
-            "name": "Sam Wilson",
             "title": "Top-notch service provider!",
             "testimonial": "A top-notch service provider! We couldn’t be happier with the results.",
-            "position": "CTO, Company Z",
-            "photoUrl": "profile-dummy.jpeg"
+            "profile": {
+                "name": "Sam Wilson",
+                "position": "CTO, Company Z",
+                "photoUrl": "profile-dummy.jpeg"
+            }
         },
         {
             "id": 4,
-            "name": "Michael Johnson",
             "title": "Exceeded Expectations",
             "testimonial": "The team exceeded our expectations! Every detail was handled with care.",
-            "position": "Director, Company A",
-            "photoUrl": "profile-dummy.jpeg"
+            "profile": {
+                "name": "Michael Johnson",
+                "position": "Director, Company A",
+                "photoUrl": "profile-dummy.jpeg"
+            }
         },
         {
             "id": 5,
-            "name": "Emily Davis",
             "title": "Professional and Reliable",
             "testimonial": "Professional, reliable, and supportive throughout the entire project.",
-            "position": "COO, Company B",
-            "photoUrl": "profile-dummy.jpeg"
+            "profile": {
+                "name": "Emily Davis",
+                "position": "COO, Company B",
+                "photoUrl": "profile-dummy.jpeg"
+            }
         }
     ]
 }

@@ -1,7 +1,12 @@
 import { Button } from "@/components/ui/button";
-import AlurCard from "./AlurCard";
+import AlurCard from "./StepCard";
+import { Step } from "@/types/Step";
 
-export default function AlurSection() {
+interface ProcedureSectionProps {
+  steps: Step[] 
+}
+
+export default function ProcedureSection({steps}: ProcedureSectionProps) {
     return (
       <section id="alur" className="-mx-4 md:-mx-6 xl:-mx-12 px-4 md:px-6 xl:px-12 py-12 md:py-14 xl:[py-120px] bg-gray-25">
         <div className="py-5 px-4 bg-white rounded-xl border border-brand-100 space-y-8 md:space-y-12">
@@ -12,10 +17,12 @@ export default function AlurSection() {
             </div>
             <Button variant="secondary" className="max-md:hidden">Konsultasi sekarang</Button>
           </div>
-          <div className="max-md:space-y-8 md:grid grid-cols-2 xl:grid-cols-3 gap-8">
-            <AlurCard />
-            <AlurCard />
-            <AlurCard isLast/>
+          <div className="max-md:space-y-8 md:grid grid-cols-2 xl:grid-cols-4 gap-8">
+            {
+              steps.map((step) => {
+                return <AlurCard key={step.id} step={step} />
+              })
+            }
           </div>
           <Button variant="secondary" className="w-full md:hidden">Konsultasi sekarang</Button>
         </div>

@@ -13,10 +13,7 @@ export default function BenefitCard({benefit}: BenefitCardProps) {
             <div className={`max-md:hidden w-full relative h-[200px] xl:h-[272px]`}>
                 <Image src={`/img/${benefit.image}`} fill alt="step-1" className="object-cover rounded-xl"/>
             </div>
-            <div className="space-y-2 md:space-y-4">
-                <h3 className="text-[32px] md:text-[40px] xl:text-[56px]">{benefit.number}<span className="text-base">{benefit.unit}</span></h3>
-                <p className="text-gray-700 text-sm xl:text-base">{benefit.description}</p>
-            </div>
+            <p className="text-gray-700 text-sm xl:text-base">{benefit.description}</p>
         </div>
     );
 }
