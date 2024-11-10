@@ -3,12 +3,14 @@ import ServicesHeader from "./ServicesHeader";
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
 import HomeServiceCard from "./HomeServiceCard";
 import { Service } from "@/types/Service";
+import { useRouter } from "next/navigation";
 
 interface ServiceSectionProps {
     services: Service[]
 }
 
 export default function ServiceSection({services}: ServiceSectionProps) {
+    const router = useRouter()
     const selectedServices = [1, 5, 10, 15, 19]
     const filteredServices = services.filter((service) => selectedServices.includes(service.id));
     return (
@@ -43,7 +45,7 @@ export default function ServiceSection({services}: ServiceSectionProps) {
             </div>
             </Carousel>
 
-            <Button variant="secondary" className="w-full md:hidden">Lihat semua layanan</Button>
+            <Button onClick={() => router.push("/services")} variant="secondary" className="w-full md:hidden">Lihat semua layanan</Button>
         </section>
     );
 }

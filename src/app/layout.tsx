@@ -3,8 +3,7 @@ import { Libre_Baskerville, Plus_Jakarta_Sans } from "next/font/google";
 import "./globals.css";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
-import Link from "next/link";
-import Image from "next/image";
+import WhatsappFloatingButton from "@/components/FloatingButton";
 
 const LibreBaskerville = Libre_Baskerville({
   weight: "400",
@@ -33,11 +32,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${LibreBaskerville.className} ${PlusJakartaSans.className} antialiased`}
+        className={`${LibreBaskerville.className} ${PlusJakartaSans.className} antialiased scroll-smooth`}
       >
-        <Link href="" className="fixed z-50 bottom-16 right-10 flex items-center gap-2 text-sm py-3 px-4 rounded-full bg-brand-green text-brand-dark-green font-bold shadow">
-          <Image src="/img/WhatsApp-logo.png" alt="whatsapp-logo" width={21} height={21}/> Hubungi kami
-        </Link>
+        <WhatsappFloatingButton />
         <Navbar />
         {children}
         <Footer />

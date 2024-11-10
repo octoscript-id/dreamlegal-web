@@ -1,24 +1,27 @@
+"use client"
 import Image from "next/image"
 import Link from "next/link"
 import { Button } from "./ui/button"
+import { sendWhatsappMessage } from "@/lib/sendWhatsappMessage"
+import { CONTACT_MESSAGE, CONTACT_NUMBER } from "@/static/Contact"
 
 export default function Navbar() {
     const links = [
         {
             text: 'Benefit',
-            href: '/',
+            href: '/#benefit',
         },
         {
             text: 'Layanan',
-            href: '/',
+            href: '/services',
         },
         {
             text: 'Alur Kerja',
-            href: '/',
+            href: '/#alur',
         },
         {
             text: 'Testimoni',
-            href: '/',
+            href: '/#testimoni',
         },
     ]
 
@@ -46,7 +49,7 @@ export default function Navbar() {
                     ))
                 }
             </ul>
-            <Button variant="secondary">
+            <Button onClick={() => sendWhatsappMessage(CONTACT_NUMBER, CONTACT_MESSAGE)} variant="secondary">
                 Hubungi Kami
             </Button>
         </nav>
