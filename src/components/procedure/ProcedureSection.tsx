@@ -1,3 +1,5 @@
+"use client"
+
 import { Button } from "@/components/ui/button";
 import AlurCard from "./StepCard";
 import { Step } from "@/types/Step";

@@ -1,3 +1,4 @@
+import { Service } from "@/types/Service";
 import { clsx, type ClassValue } from "clsx"
 import { twMerge } from "tailwind-merge"
 
@@ -24,4 +25,8 @@ export const getVariant = (index: number) => {
     default:
       return "default";
   }
+}
+
+export const checkIsLast = (service: Service, index: number) => {
+  return service.options.length % 2 != 0 && index == (service.options.length-1)
 }

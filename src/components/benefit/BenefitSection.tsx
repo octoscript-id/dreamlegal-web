@@ -1,3 +1,5 @@
+"use client"
+
 import { Button } from "@/components/ui/button";
 import BenefitCard from "./BenefitCard";
 import { Benefit } from "@/types/Benefit";

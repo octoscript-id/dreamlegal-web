@@ -15,7 +15,7 @@ export default function HomeServiceCard({service}: HomeServiceCardProps) {
               <ServiceCardHeader startFrom={service.options[0].price} title={service.title} options={service.options.flatMap((option) => option.package)} />
             </div>
             <div className="p-5">
-              <ServiceDialog />
+              <ServiceDialog service={service} />
             </div>
         </div>
     );
