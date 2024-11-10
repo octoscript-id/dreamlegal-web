@@ -1,3 +1,5 @@
+"use client"
+
 import { Button } from "@/components/ui/button";
 import { sendWhatsappMessage } from "@/lib/sendWhatsappMessage";
 import { CONTACT_MESSAGE, CONTACT_NUMBER } from "@/static/Contact";
