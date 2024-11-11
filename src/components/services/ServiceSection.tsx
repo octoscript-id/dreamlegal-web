@@ -23,7 +23,7 @@ export default function ServiceSection() {
             >
             <CarouselContent className="max-md:flex-col max-md:gap-6">
                 <CarouselItem className="md:basis-2/3 xl:basis-1/3">
-                    <HomeServiceCard/>
+                    <HomeServiceCard is_highlighted/>
                 </CarouselItem>
                 <CarouselItem className="md:basis-2/3 xl:basis-1/3">
                     <HomeServiceCard/>

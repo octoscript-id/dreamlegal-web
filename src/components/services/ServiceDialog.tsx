@@ -10,14 +10,25 @@ import { Cross1Icon } from "@radix-ui/react-icons";
 import { VisuallyHidden } from "@radix-ui/react-visually-hidden";
 import ServiceCard from "./ServiceCard";
 import ServiceCardHeader from "./ServiceCardHeader";
+import { Button } from "../ui/button";
 
+interface ServiceDialogProps {
+  is_highlighted?: boolean
+}
 
-export default function ServiceDialog() {
+export default function ServiceDialog({
+  is_highlighted
+}: ServiceDialogProps) {
     return (
       <Dialog>
-        <DialogTrigger className="w-full px-6 py-4 bg-gray-100 text-gray-800 shadow-sm hover:bg-gray-200 active:bg-gray-300 inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-base font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0">
-          Lihat detail
-        </DialogTrigger>
+        <div className="grid grid-cols-2 gap-4">
+          <Button variant={is_highlighted ? "default" : "tertiary"}>
+            Pilih layanan
+          </Button>
+          <DialogTrigger className="w-full px-6 py-4 bg-gray-100 text-gray-800 shadow-sm hover:bg-gray-200 active:bg-gray-300 inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-base font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0">
+            Lihat detail
+          </DialogTrigger>
+        </div>
         <DialogContent>
           <ScrollArea className="max-h-[calc(100vh-96px)]">
             <div className="space-y-6 xl:space-y-10">
