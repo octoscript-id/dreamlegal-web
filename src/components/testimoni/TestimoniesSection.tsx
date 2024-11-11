@@ -1,10 +1,17 @@
+"use client"
+
 import { Button } from "@/components/ui/button";
 import { Carousel, CarouselContent, CarouselItem } from "@/components/ui/carousel";
-import TestimoniCard from "./TestimoniCard";
+import TestimonyCard from "./TestimonyCard";
 import { sendWhatsappMessage } from "@/lib/sendWhatsappMessage";
 import { CONTACT_MESSAGE, CONTACT_NUMBER } from "@/static/Contact";
+import { Testimony } from "@/types/Testimony";
 
-export default function TestimoniSection() {
+interface TestimoniesSectionProps {
+  testimonies: Testimony[]
+}
+
+export default function TestimoniesSection({testimonies}: TestimoniesSectionProps) {
     return (
       <section id="testimoni" className="py-12 md:py-16 xl:py-[120px] space-y-8 md:space-y-12">
         <div className="md:space-y-8 xl:flex justify-between items-end">
@@ -26,18 +33,15 @@ export default function TestimoniSection() {
           }}
         >
           <CarouselContent className="max-md:flex-col max-md:gap-8">
-            <CarouselItem className="md:basis-1/2 xl:basis-1/3">
-              <TestimoniCard />
-            </CarouselItem>
-            <CarouselItem className="md:basis-1/2 xl:basis-1/3">
-              <TestimoniCard />
-            </CarouselItem>
-            <CarouselItem className="md:basis-1/2 xl:basis-1/3">
-              <TestimoniCard />
-            </CarouselItem>
-            <CarouselItem className="md:basis-1/2 xl:basis-1/3">
-              <TestimoniCard />
-            </CarouselItem>
+            {
+              testimonies.map((testimony) => {
+                return (
+                  <CarouselItem key={testimony.id} className="md:basis-1/2 xl:basis-1/3">
+                    <TestimonyCard testimony={testimony}/>
+                  </CarouselItem>
+                )
+              })
+            }
           </CarouselContent>
         </Carousel>
         

@@ -1,0 +1,1152 @@
+{
+    "companies": [
+        {
+            "id": 1,
+            "name": "BCA",
+            "width": 1000,
+            "height": 313,
+            "logoUrl": "logo-bca.svg",
+            "altText": "BCA Logo"
+        },
+        {
+            "id": 2,
+            "name": "OVO",
+            "width": 2560,
+            "height": 798,
+            "logoUrl": "logo-ovo.png",
+            "altText": "OVO Logo"
+        },
+        {
+            "id": 3,
+            "name": "Apple",
+            "width": 625,
+            "height": 768,
+            "logoUrl": "apple-logo.svg",
+            "altText": "Apple Logo"
+        },
+        {
+            "id": 4,
+            "name": "Youtube",
+            "width": 2500,
+            "height": 1756,
+            "logoUrl": "youtube-logo.svg",
+            "altText": "Youtube Logo"
+        },
+        {
+            "id": 5,
+            "name": "LG",
+            "width": 1024,
+            "height": 1024,
+            "logoUrl": "lg-logo.png",
+            "altText": "LG Logo"
+        }
+    ],
+    "benefits": [
+        {
+            "id": 1,
+            "benefit": "Mudah",
+            "description": "Pengurusan Legalitas Usaha Mudah",
+            "image": "alur-dummy-1.jpeg"
+        },
+        {
+            "id": 2,
+            "benefit": "Efisiensi Waktu",
+            "description": "Pengurusan Legalitas Usaha prosesnya cepat",
+            "image": "alur-dummy-2.jpeg"
+        },
+        {
+            "id": 3,
+            "benefit": "Terjangkau",
+            "description": "Biaya pengurusan yang terjangkau",
+            "image": "alur-dummy-3.jpeg"
+        },
+        {
+            "id": 4,
+            "benefit": "Fleksibel",
+            "description": "Pelayanan Konsultasi sesuai kebutuhan klien",
+            "image": "alur-dummy-1.jpeg"
+        },
+        {
+            "id": 5,
+            "benefit": "Aman",
+            "description": "Kerahasiaan dan Perlindungan Data Pribadi/Perusahaan terjaga",
+            "image": "alur-dummy-2.jpeg"
+        }
+    ],
+    "services": [
+        {
+            "id": 1,
+            "category": "Pendirian Usaha",
+            "services": [
+                {
+                    "id": 1,
+                    "title": "Pendirian PT Perorangan",
+                    "options": [
+                        {
+                            "package": "Queen",
+                            "price": 799000,
+                            "features": [
+                                "Pendaftaran Nama PT",
+                                "Sertifikat Pendirian PT",
+                                "Surat Pernyataan Pendirian PT",
+                                "NPWP PT",
+                                "15 KBLI Bidang Usaha",
+                                "Akun AHU & OSS",
+                                "K3L, SPUMKTTR, SPPL, & NIB",
+                                "Pernyataan Mandiri & Sertifikat Standar",
+                                "Angka Pengenal Impor (API)",
+                                "Rekomendasi Rekening Bank"
+                            ],
+                            "duration": "1-3 Hari Kerja"
+                        },
+                        {
+                            "package": "King",
+                            "price": 999000,
+                            "features": [
+                                "Pendaftaran Nama PT",
+                                "Sertifikat Pendirian PT",
+                                "Surat Pernyataan Pendirian PT",
+                                "NPWP Pendiri & NPWP PT",
+                                "15 KBLI Bidang Usaha",
+                                "Akun AHU & OSS",
+                                "K3L, SPUMKTTR, SPPL, & NIB",
+                                "Pernyataan Mandiri & Sertifikat Standar",
+                                "Angka Pengenal Impor (API)",
+                                "Rekomendasi Rekening Bank"
+                            ],
+                            "duration": "1 Hari Kerja"
+                        }
+                    ],
+                    "is_highlighted": false
+                },
+                {
+                    "id": 2,
+                    "title": "Pendirian CV",
+                    "options": [
+                        {
+                            "package": "Jack",
+                            "price": 1799000,
+                            "features": [
+                                "Pendaftaran Nama CV",
+                                "Akta Notaris",
+                                "SK Kemenkumham",
+                                "NPWP Pendiri",
+                                "NPWP CV",
+                                "15 KBLI Bidang Usaha"
+                            ],
+                            "duration": "2-5 Hari Kerja"
+                        },
+                        {
+                            "package": "Queen",
+                            "price": 2799000,
+                            "features": [
+                                "Pendaftaran Nama CV",
+                                "Akta Notaris",
+                                "SK Kemenkumham",
+                                "NPWP Pendiri",
+                                "NPWP CV",
+                                "15 KBLI Bidang Usaha",
+                                "NIB dan Akun OSS",
+                                "K3L, SPUMKTTR, SPPL",
+                                "Sertifikat Standar",
+                                "Angka Pengenal Impor (API)",
+                                "Rekomendasi Rekening Bank"
+                            ],
+                            "duration": "5-10 Hari Kerja"
+                        },
+                        {
+                            "package": "King",
+                            "price": 3499000,
+                            "features": [
+                                "Pendaftaran Nama CV",
+                                "Akta Notaris",
+                                "SK Kemenkumham",
+                                "NPWP Pendiri",
+                                "NPWP CV",
+                                "15 KBLI Bidang Usaha",
+                                "NIB dan Akun OSS",
+                                "K3L, SPUMKTTR, SPPL",
+                                "Sertifikat Standar",
+                                "Angka Pengenal Impor (API)",
+                                "Rekomendasi Rekening Bank"
+                            ],
+                            "duration": "3-5 Hari Kerja"
+                        }
+                    ],
+                    "is_highlighted": false
+                },
+                {
+                    "id": 3,
+                    "title": "Pendirian PT Perseroan",
+                    "subtitle": "Modal Di Bawah 1 M",
+                    "options": [
+                        {
+                            "package": "Jack",
+                            "price": 2799000,
+                            "features": [
+                                "Pendaftaran Nama PT",
+                                "Akta Notaris",
+                                "SK Kemenkumham",
+                                "NPWP Pendiri",
+                                "NPWP PT",
+                                "15 KBLI Bidang Usaha"
+                            ],
+                            "duration": "2-5 Hari Kerja"
+                        },
+                        {
+                            "package": "Queen",
+                            "price": 3799000,
+                            "features": [
+                                "Pendaftaran Nama PT",
+                                "Akta Notaris",
+                                "SK Kemenkumham",
+                                "NPWP Pendiri",
+                                "NPWP PT",
+                                "15 KBLI Bidang Usaha",
+                                "NIB dan Akun OSS",
+                                "K3L, SPUMKTTR, SPPL",
+                                "Sertifikat Standar",
+                                "Angka Pengenal Impor (API)",
+                                "Rekomendasi Rekening Bank"
+                            ],
+                            "duration": "5-10 Hari Kerja"
+                        },
+                        {
+                            "package": "King",
+                            "price": 4499000,
+                            "features": [
+                                "Pendaftaran Nama PT",
+                                "Akta Notaris",
+                                "SK Kemenkumham",
+                                "NPWP Pendiri",
+                                "NPWP PT",
+                                "20 KBLI Bidang Usaha",
+                                "NIB dan Akun OSS",
+                                "K3L, SPUMKTTR, SPPL",
+                                "Sertifikat Standar",
+                                "Angka Pengenal Impor (API)",
+                                "Rekomendasi Rekening Bank"
+                            ],
+                            "duration": "3-5 Hari Kerja"
+                        }
+                    ],
+                    "is_highlighted": false
+                },
+                {
+                    "id": 4,
+                    "title": "Pendirian PT Perseroan",
+                    "subtitle": "Modal Di Bawah 1 M + Pendaftaran BNRI",
+                    "options": [
+                        {
+                            "package": "Jack",
+                            "price": 3649000,
+                            "features": [
+                                "Pendaftaran Nama PT",
+                                "Akta Notaris",
+                                "SK Kemenkumham",
+                                "Pendaftaran BNRI",
+                                "Sertifikat BNRI",
+                                "NPWP Pendiri",
+                                "NPWP PT",
+                                "15 KBLI Bidang Usaha"
+                            ],
+                            "duration": "2-5 Hari Kerja"
+                        },
+                        {
+                            "package": "Queen",
+                            "price": 4649000,
+                            "features": [
+                                "Pendaftaran Nama PT",
+                                "Akta Notaris",
+                                "SK Kemenkumham",
+                                "Pendaftaran BNRI",
+                                "Sertifikat BNRI",
+                                "NPWP Pendiri",
+                                "NPWP PT",
+                                "15 KBLI Bidang Usaha",
+                                "NIB dan Akun OSS",
+                                "K3L, SPUMKTTR, SPPL",
+                                "Sertifikat Standar",
+                                "Angka Pengenal Impor (API)",
+                                "Rekomendasi Rekening Bank"
+                            ],
+                            "duration": "5-10 Hari Kerja"
+                        },
+                        {
+                            "package": "King",
+                            "price": 5349000,
+                            "features": [
+                                "Pendaftaran Nama PT",
+                                "Akta Notaris",
+                                "SK Kemenkumham",
+                                "Pendaftaran BNRI",
+                                "Sertifikat BNRI",
+                                "NPWP Pendiri",
+                                "NPWP PT",
+                                "15 KBLI Bidang Usaha",
+                                "NIB dan Akun OSS",
+                                "K3L, SPUMKTTR, SPPL",
+                                "Sertifikat Standar",
+                                "Angka Pengenal Impor (API)",
+                                "Rekomendasi Rekening Bank"
+                            ],
+                            "duration": "3-5 Hari Kerja"
+                        }
+                    ],
+                    "is_highlighted": false
+                },
+                {
+                    "id": 5,
+                    "title": "Pendirian PT Perseroan",
+                    "subtitle": "Modal Di Atas 1 M",
+                    "options": [
+                        {
+                            "package": "Jack",
+                            "price": 3799000,
+                            "features": [
+                                "Pendaftaran Nama PT",
+                                "Akta Notaris",
+                                "SK Kemenkumham",
+                                "NPWP Pendiri",
+                                "NPWP PT",
+                                "15 KBLI Bidang Usaha"
+                            ],
+                            "duration": "2-5 Hari Kerja"
+                        },
+                        {
+                            "package": "Queen",
+                            "price": 4799000,
+                            "features": [
+                                "Pendaftaran Nama PT",
+                                "Akta Notaris",
+                                "SK Kemenkumham",
+                                "NPWP Pendiri",
+                                "NPWP PT",
+                                "15 KBLI Bidang Usaha",
+                                "NIB dan Akun OSS",
+                                "K3L, SPUMKTTR, SPPL",
+                                "Sertifikat Standar",
+                                "Angka Pengenal Impor (API)",
+                                "Rekomendasi Rekening Bank"
+                            ],
+                            "duration": "5-10 Hari Kerja"
+                        },
+                        {
+                            "package": "King",
+                            "price": 5499000,
+                            "features": [
+                                "Pendaftaran Nama PT",
+                                "Akta Notaris",
+                                "SK Kemenkumham",
+                                "NPWP Pendiri",
+                                "NPWP PT",
+                                "20 KBLI Bidang Usaha",
+                                "NIB dan Akun OSS",
+                                "K3L, SPUMKTTR, SPPL",
+                                "Sertifikat Standar",
+                                "Angka Pengenal Impor (API)",
+                                "Rekomendasi Rekening Bank"
+                            ],
+                            "duration": "3-5 Hari Kerja"
+                        }
+                    ],
+                    "is_highlighted": false
+                },
+                {
+                    "id": 6,
+                    "title": "Pendirian PT Perseroan",
+                    "subtitle": "Modal Di Atas 1 M + Pendaftaran BNRI",
+                    "options": [
+                        {
+                            "package": "Jack",
+                            "price": 4649000,
+                            "features": [
+                                "Pendaftaran Nama PT",
+                                "Akta Notaris",
+                                "SK Kemenkumham",
+                                "Pendaftaran BNRI",
+                                "Sertifikat BNRI",
+                                "NPWP Pendiri",
+                                "NPWP PT",
+                                "15 KBLI Bidang Usaha"
+                            ],
+                            "duration": "2-5 Hari Kerja"
+                        },
+                        {
+                            "package": "Queen",
+                            "price": 5649000,
+                            "features": [
+                                "Pendaftaran Nama PT",
+                                "Akta Notaris",
+                                "SK Kemenkumham",
+                                "Pendaftaran BNRI",
+                                "Sertifikat BNRI",
+                                "NPWP Pendiri",
+                                "NPWP PT",
+                                "15 KBLI Bidang Usaha",
+                                "NIB dan Akun OSS",
+                                "K3L, SPUMKTTR, SPPL",
+                                "Sertifikat Standar",
+                                "Angka Pengenal Impor (API)",
+                                "Rekomendasi Rekening Bank"
+                            ],
+                            "duration": "5-10 Hari Kerja"
+                        },
+                        {
+                            "package": "King",
+                            "price": 6349000,
+                            "features": [
+                                "Pendaftaran Nama PT",
+                                "Akta Notaris",
+                                "SK Kemenkumham",
+                                "Pendaftaran BNRI",
+                                "Sertifikat BNRI",
+                                "NPWP Pendiri",
+                                "NPWP PT",
+                                "15 KBLI Bidang Usaha",
+                                "NIB dan Akun OSS",
+                                "K3L, SPUMKTTR, SPPL",
+                                "Sertifikat Standar",
+                                "Angka Pengenal Impor (API)",
+                                "Rekomendasi Rekening Bank"
+                            ],
+                            "duration": "3-5 Hari Kerja"
+                        }
+                    ],
+                    "is_highlighted": false
+                },
+                {
+                    "id": 7,
+                    "title": "Pendirian PT PMA",
+                    "options": [
+                        {
+                            "package": "Jack",
+                            "price": 6499000,
+                            "features": [
+                                "Pendaftaran Nama PT",
+                                "Akta Notaris",
+                                "SK Kemenkumham",
+                                "NPWP Pendiri",
+                                "NPWP PT",
+                                "15 KBLI Bidang Usaha"
+                            ],
+                            "duration": "2-5 Hari Kerja"
+                        },
+                        {
+                            "package": "Queen",
+                            "price": 7499000,
+                            "features": [
+                                "Pendaftaran Nama PT",
+                                "Akta Notaris",
+                                "SK Kemenkumham",
+                                "NPWP Pendiri",
+                                "NPWP PT",
+                                "15 KBLI Bidang Usaha",
+                                "NIB dan Akun OSS",
+                                "K3L, SPUMKTTR, SPPL",
+                                "Sertifikat Standar",
+                                "Angka Pengenal Impor (API)",
+                                "Rekomendasi Rekening Bank"
+                            ],
+                            "duration": "5-10 Hari Kerja"
+                        },
+                        {
+                            "package": "King",
+                            "price": 7999000,
+                            "features": [
+                                "Pendaftaran Nama PT",
+                                "Akta Notaris",
+                                "SK Kemenkumham",
+                                "NPWP Pendiri",
+                                "NPWP PT",
+                                "20 KBLI Bidang Usaha",
+                                "NIB dan Akun OSS",
+                                "K3L, SPUMKTTR, SPPL",
+                                "Sertifikat Standar",
+                                "Angka Pengenal Impor (API)",
+                                "Rekomendasi Rekening Bank"
+                            ],
+                            "duration": "3-5 Hari Kerja"
+                        }
+                    ],
+                    "is_highlighted": false
+                },
+                {
+                    "id": 8,
+                    "title": "Pendirian PT PMA",
+                    "subtitle": "+ Pendaftaran BNRI",
+                    "options": [
+                        {
+                            "package": "Jack",
+                            "price": 7349000,
+                            "features": [
+                                "Pendaftaran Nama PT",
+                                "Akta Notaris",
+                                "SK Kemenkumham",
+                                "Pendaftaran BNRI",
+                                "Sertifikat BNRI",
+                                "NPWP Pendiri",
+                                "NPWP PT",
+                                "15 KBLI Bidang Usaha"
+                            ],
+                            "duration": "2-5 Hari Kerja"
+                        },
+                        {
+                            "package": "Queen",
+                            "price": 8349000,
+                            "features": [
+                                "Pendaftaran Nama PT",
+                                "Akta Notaris",
+                                "SK Kemenkumham",
+                                "Pendaftaran BNRI",
+                                "Sertifikat BNRI",
+                                "NPWP Pendiri",
+                                "NPWP PT",
+                                "15 KBLI Bidang Usaha",
+                                "NIB dan Akun OSS",
+                                "K3L, SPUMKTTR, SPPL",
+                                "Sertifikat Standar",
+                                "Angka Pengenal Impor (API)",
+                                "Rekomendasi Rekening Bank"
+                            ],
+                            "duration": "5-10 Hari Kerja"
+                        },
+                        {
+                            "package": "King",
+                            "price": 8849000,
+                            "features": [
+                                "Pendaftaran Nama PT",
+                                "Akta Notaris",
+                                "SK Kemenkumham",
+                                "Pendaftaran BNRI",
+                                "Sertifikat BNRI",
+                                "NPWP Pendiri",
+                                "NPWP PT",
+                                "15 KBLI Bidang Usaha",
+                                "NIB dan Akun OSS",
+                                "K3L, SPUMKTTR, SPPL",
+                                "Sertifikat Standar",
+                                "Angka Pengenal Impor (API)",
+                                "Rekomendasi Rekening Bank"
+                            ],
+                            "duration": "3-5 Hari Kerja"
+                        }
+                    ],
+                    "is_highlighted": false
+                },
+                {
+                    "id": 9,
+                    "title": "Pendirian Yayasan",
+                    "subtitle": "Modal Rp10 Juta - Rp25 Juta",
+                    "options": [
+                        {
+                            "package": "Jack",
+                            "price": 2999000,
+                            "features": [
+                                "Pendaftaran Nama Yayasan",
+                                "Akta Notaris",
+                                "SK Kemenkumham",
+                                "NPWP Pendiri",
+                                "NPWP Yayasan"
+                            ],
+                            "duration": "3-5 Hari Kerja"
+                        },
+                        {
+                            "package": "Queen",
+                            "price": 3999000,
+                            "features": [
+                                "Pendaftaran Nama Yayasan",
+                                "Akta Notaris",
+                                "SK Kemenkumham",
+                                "NPWP Pendiri",
+                                "NPWP Yayasan",
+                                "15 KBLI Bidang Usaha",
+                                "NIB dan Akun OSS",
+                                "K3L, SPUMKTTR, SPPL",
+                                "Sertifikat Standar",
+                                "Angka Pengenal Impor (API)",
+                                "Rekomendasi Rekening Bank"
+                            ],
+                            "duration": "5-10 Hari Kerja"
+                        }
+                    ],
+                    "is_highlighted": false
+                },
+                {
+                    "id": 10,
+                    "title": "Pendirian Yayasan",
+                    "subtitle": "Modal Rp25 Juta - 1 Milyar",
+                    "options": [
+                        {
+                            "package": "Jack",
+                            "price": 3299000,
+                            "features": [
+                                "Pendaftaran Nama Yayasan",
+                                "Akta Notaris",
+                                "SK Kemenkumham",
+                                "NPWP Pendiri",
+                                "NPWP Yayasan"
+                            ],
+                            "duration": "3-5 Hari Kerja"
+                        },
+                        {
+                            "package": "Queen",
+                            "price": 4299000,
+                            "features": [
+                                "Pendaftaran Nama Yayasan",
+                                "Akta Notaris",
+                                "SK Kemenkumham",
+                                "NPWP Pendiri",
+                                "NPWP Yayasan",
+                                "15 KBLI Bidang Usaha",
+                                "NIB dan Akun OSS",
+                                "K3L, SPUMKTTR, SPPL",
+                                "Sertifikat Standar",
+                                "Angka Pengenal Impor (API)",
+                                "Rekomendasi Rekening Bank"
+                            ],
+                            "duration": "5-10 Hari Kerja"
+                        }
+                    ],
+                    "is_highlighted": false
+                },
+                {
+                    "id": 11,
+                    "title": "Pendirian Perkumpulan",
+                    "options": [
+                        {
+                            "package": "Jack",
+                            "price": 2999000,
+                            "features": [
+                                "Pendaftaran Nama Perkumpulan",
+                                "Akta Notaris",
+                                "SK Kemenkumham",
+                                "NPWP Pendiri",
+                                "NPWP Perkumpulan"
+                            ],
+                            "duration": "3-5 Hari Kerja"
+                        },
+                        {
+                            "package": "Queen",
+                            "price": 3999000,
+                            "features": [
+                                "Pendaftaran Nama Perkumpulan",
+                                "Akta Notaris",
+                                "SK Kemenkumham",
+                                "NPWP Pendiri",
+                                "NPWP Perkumpulan",
+                                "15 KBLI Bidang Usaha",
+                                "NIB dan Akun OSS",
+                                "K3L, SPUMKTTR, SPPL",
+                                "Sertifikat Standar",
+                                "Angka Pengenal Impor (API)",
+                                "Rekomendasi Rekening Bank"
+                            ],
+                            "duration": "5-10 Hari Kerja"
+                        }
+                    ],
+                    "is_highlighted": false
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "category": "Perubahan Usaha",
+            "services": [
+                {
+                    "id": 12,
+                    "title": "Perubahan PT Perseroan",
+                    "options": [
+                        {
+                            "package": "Perubahan Akta",
+                            "price": 4999000,
+                            "features": [
+                                "Akta Perubahan PT",
+                                "SK/SP Perubahan PT",
+                                "Perubahan Data NIB",
+                                "15 KBLI Bidang Usaha"
+                            ]
+                        },
+                        {
+                            "package": "Akuisisi",
+                            "price": 5499000,
+                            "features": [
+                                "Pengumuman Koran",
+                                "Akta Perubahan PT",
+                                "SK/SP Perubahan PT",
+                                "Perubahan Data NIB",
+                                "15 KBLI Bidang Usaha"
+                            ]
+                        },
+                        {
+                            "package": "Jual Beli Saham",
+                            "price": 1499000,
+                            "features": [
+                                "Akta Jual Beli Saham"
+                            ]
+                        }
+                    ],
+                    "is_highlighted": false
+                },
+                {
+                    "id": 13,
+                    "title": "Perubahan PT PMA",
+                    "options": [
+                        {
+                            "package": "Perubahan Akta",
+                            "price": 5999000,
+                            "features": [
+                                "Akta Perubahan PT",
+                                "SK/SP Perubahan PT",
+                                "Perubahan Data NIB",
+                                "15 KBLI Bidang Usaha"
+                            ]
+                        },
+                        {
+                            "package": "Akuisisi",
+                            "price": 6499000,
+                            "features": [
+                                "Pengumuman Koran",
+                                "Akta Perubahan PT",
+                                "SK/SP Perubahan PT",
+                                "Perubahan Data NIB",
+                                "15 KBLI Bidang Usaha"
+                            ]
+                        },
+                        {
+                            "package": "Jual Beli Saham",
+                            "price": 1999000,
+                            "features": [
+                                "Akta Jual Beli Saham"
+                            ]
+                        }
+                    ],
+                    "is_highlighted": false
+                },
+                {
+                    "id": 14,
+                    "title": "Perubahan PT Perorangan dan CV",
+                    "options": [
+                        {
+                            "package": "PT Perorangan",
+                            "price": 799000,
+                            "features": [
+                                "Sertifikat Perubahan PT",
+                                "Surat Pernyataan Perubahan",
+                                "Perubahan Data NIB",
+                                "15 KBLI Bidang Usaha"
+                            ],
+                            "duration": "1-2 Hari Kerja"
+                        },
+                        {
+                            "package": "CV",
+                            "price": 2799000,
+                            "features": [
+                                "Akta Perubahan CV",
+                                "SK/SP Perubahan CV",
+                                "Perubahan Data NIB",
+                                "15 KBLI Bidang Usaha"
+                            ],
+                            "duration": "5-10 Hari Kerja"
+                        }
+                    ],
+                    "is_highlighted": false
+                }
+            ]
+        },
+        {
+            "id": 3,
+            "category": "Pembubaran Usaha",
+            "services": [
+                {
+                    "id": 15,
+                    "title": "Pembubaran PT Perseroan dan PT PMA",
+                    "options": [
+                        {
+                            "package": "PT Perseroan",
+                            "price": 7799000,
+                            "features": [
+                                "Pengumuman Koran Tahap 1 & 2",
+                                "Akta Pembubaran Tahap 1 & 2",
+                                "SP Pembubaran Tahap 1 & 2",
+                                "Pencabutan NIB",
+                                "Penonaktifan NPWP PT"
+                            ]
+                        },
+                        {
+                            "package": "PT PMA",
+                            "price": 8999000,
+                            "features": [
+                                "Pengumuman Koran Tahap 1 & 2",
+                                "Akta Pembubaran Tahap 1 & 2",
+                                "SP Pembubaran Tahap 1 & 2",
+                                "Pencabutan NIB",
+                                "Penonaktifan NPWP PT"
+                            ]
+                        }
+                    ],
+                    "is_highlighted": false
+                },
+                {
+                    "id": 16,
+                    "title": "Pembubaran PT Perorangan dan CV",
+                    "options": [
+                        {
+                            "package": "PT Perorangan",
+                            "price": 799000,
+                            "features": [
+                                "Sertifikat Pembubaran PT",
+                                "Surat Pernyataan Pembubaran",
+                                "Pencabutan NIB",
+                                "Penonaktifan NPWP PT"
+                            ],
+                            "duration": "1-2 Hari Kerja"
+                        },
+                        {
+                            "package": "CV",
+                            "price": 3499000,
+                            "features": [
+                                "Akta Pembubaran CV",
+                                "SK/SP Pembubaran CV",
+                                "Pencabutan NIB",
+                                "Penonaktifan NPWP PT"
+                            ],
+                            "duration": "5-10 Hari Kerja"
+                        }
+                    ],
+                    "is_highlighted": false
+                } 
+            ]
+        },
+        {
+            "id": 4,
+            "category": "Kelengkapan Usaha",
+            "services": [
+                {
+                    "id": 17,
+                    "title": "Pendaftaran BNRI",
+                    "options": [
+                        {
+                            "package": "PT Perseroan",
+                            "price": 1000000,
+                            "features": [
+                                "Pendaftaran BNRI",
+                                "Sertifikat BNRI"
+                            ],
+                            "duration": "1-2 Hari Kerja"
+                        },
+                        {
+                            "package": "PT PMA",
+                            "price": 1490000,
+                            "features": [
+                                "Pendaftaran BNRI",
+                                "Sertifikat BNRI"
+                            ],
+                            "duration": "1-2 Hari Kerja"
+                        }
+                    ],
+                    "is_highlighted": false
+                },
+                {
+                    "id": 18,
+                    "title": "Pendaftaran NIB",
+                    "options": [
+                        {
+                            "package": "Perorangan",
+                            "price": 299000,
+                            "features": [
+                                "15 KBLI Bidang Usaha",
+                                "NPWP Pribadi",
+                                "Akun GMAIL & OSS",
+                                "K3L, SPUMKTTR, SPPL, & NIB",
+                                "Pernyataan Mandiri & Sertifikat Standar",
+                                "Angka Pengenal Impor (API)"
+                            ],
+                            "duration": "1-2 Hari Kerja"
+                        },
+                        {
+                            "package": "Badan",
+                            "price": 999000,
+                            "features": [
+                                "15 KBLI Bidang Usaha",
+                                "NPWP Pribadi & Badan",
+                                "Akun GMAIL & OSS",
+                                "K3L, SPUMKTTR, SPPL, & NIB",
+                                "Pernyataan Mandiri & Sertifikat Standar",
+                                "Angka Pengenal Impor (API)"
+                            ],
+                            "duration": "1-2 Hari Kerja"
+                        }
+                    ],
+                    "is_highlighted": false
+                },
+                {
+                    "id": 19,
+                    "title": "Pendaftaran PSE",
+                    "options": [
+                        {
+                            "package": "PSE Domestik",
+                            "price": 999000,
+                            "features": [
+                                "Verifikasi Data PSE",
+                                "Tanda Terima Pendaftaran"
+                            ],
+                            "duration": "2-3 Hari Kerja"
+                        }
+                    ],
+                    "is_highlighted": false
+                }    
+            ]
+        },
+        {
+            "id": 5,
+            "category": "Kekayaan Intelektual",
+            "services": [
+                {
+                    "id": 20,
+                    "title": "HAKI Merek",
+                    "options": [
+                        {
+                            "package": "Cek Merek",
+                            "price": 0,
+                            "features": [],
+                            "duration": "1 Hari Kerja"
+                        },
+                        {
+                            "package": "Daftar Merek",
+                            "price": 2699000,
+                            "features": [
+                                "1 Kali Cek Nama Merek Manual",
+                                "1 Kali Cek AI",
+                                "Rekomendasi Kelas Merek",
+                                "Bukti Permohonan Merek DJKI",
+                                "Softcopy Sertifikat Merek"
+                            ],
+                            "duration": "1 Hari Kerja"
+                        },
+                        {
+                            "package": "Perpanjang Merek (Sebelum Exp)",
+                            "price": 3099000,
+                            "features": [
+                                "Bukti Perpanjangan Merek",
+                                "Softcopy Sertifikat Perpanjangan Merek"
+                            ],
+                            "duration": "5 Hari Kerja"
+                        },
+                        {
+                            "package": "Perpanjang Merek (Setelah Exp)",
+                            "price": 5299000,
+                            "features": [
+                                "Bukti Perpanjangan Merek",
+                                "Softcopy Sertifikat Perpanjangan Merek"
+                            ],
+                            "duration": "5 Hari Kerja"
+                        }
+                    ],
+                    "is_highlighted": false
+                },
+                {
+                    "id": 21,
+                    "title": "Pengalihan Merek",
+                    "options": [
+                        {
+                            "package": "Exclude Akta",
+                            "price": 1499000,
+                            "features": [
+                                "Bukti Pencatatan Pengalihan Hak Atas Merek DJKI"
+                            ],
+                            "duration": "1-2 Hari Kerja"
+                        },
+                        {
+                            "package": "Include Akta",
+                            "price": 3699000,
+                            "features": [
+                                "Akta Pengalihan Merek",
+                                "Bukti Pencatatan Pengalihan Hak Atas Merek DJKI"
+                            ],
+                            "duration": "3-5 Hari Kerja"
+                        }
+                    ],
+                    "is_highlighted": false
+                },
+                {
+                    "id": 22,
+                    "title": "HAKI",
+                    "options": [
+                        {
+                            "package": "Hak Cipta",
+                            "price": 1499000,
+                            "features": [
+                                "Konsultasi Hak Cipta",
+                                "Surat Pencatatan Ciptaan dari DJKI"
+                            ],
+                            "duration": "2-3 Hari Kerja"
+                        },
+                        {
+                            "package": "Hak Paten",
+                            "price": 2499000,
+                            "features": [
+                                "Konsultasi Hak Paten",
+                                "Surat Pencatatan dari DJKI"
+                            ],
+                            "duration": "2-3 Hari Kerja"
+                        },
+                        {
+                            "package": "Desain Industri",
+                            "price": 1999000,
+                            "features": [
+                                "Konsultasi Desain Industri",
+                                "Surat Permohonan Desain Industri"
+                            ],
+                            "duration": "2-3 Hari Kerja"
+                        }
+                    ],
+                    "is_highlighted": false
+                }
+            ]
+        },
+        {
+            "id": 6,
+            "category": "Pajak Usaha",
+            "services": [
+                {
+                    "id": 23,
+                    "title": "Pendaftaran PKP",
+                    "options": [
+                        {
+                            "package": "Bandung",
+                            "price": 1299000,
+                            "features": [
+                                "Konsultasi Perpajakan",
+                                "Pendaftaran PKP",
+                                "Persiapan Survei PKP",
+                                "Pendampingan Sertifikat Elektonik",
+                                "Aktivasi E-Faktur"
+                            ]
+                        },
+                        {
+                            "package": "Jabodetabek",
+                            "price": 1549000,
+                            "features": [
+                                "Konsultasi Perpajakan",
+                                "Pendaftaran PKP",
+                                "Persiapan Survei PKP",
+                                "Pendampingan Sertifikat Elektonik",
+                                "Aktivasi E-Faktur"
+                            ]
+                        }
+                    ],
+                    "is_highlighted": false
+                },
+                {
+                    "id": 24,
+                    "title": "Pendaftaran PKP",
+                    "options": [
+                        {
+                            "package": "Pulau Jawa",
+                            "price": 1799000,
+                            "features": [
+                                "Konsultasi Perpajakan",
+                                "Pendaftaran PKP",
+                                "Persiapan Survei PKP",
+                                "Pendampingan Sertifikat Elektonik",
+                                "Aktivasi E-Faktur"
+                            ]
+                        },
+                        {
+                            "package": "Jabodetabek",
+                            "price": 2049000,
+                            "features": [
+                                "Konsultasi Perpajakan",
+                                "Pendaftaran PKP",
+                                "Persiapan Survei PKP",
+                                "Pendampingan Sertifikat Elektonik",
+                                "Aktivasi E-Faktur"
+                            ]
+                        }
+                    ],
+                    "is_highlighted": false
+                }
+            ]
+        }
+    ],
+    "steps": [
+        {
+            "id": 1,
+            "title": "Pilih Jasa",
+            "description": "⁠Klien bisa memilih jasa apa yang akan digunakan",
+            "image": "alur-dummy-1.jpeg"
+        },
+        {
+            "id": 2,
+            "title": "Konsultasi",
+            "description": "Jika dirasa kebingungan, anda bisa menghubungi kami via WhatsApp untuk melakukan konsultasi secara gratis",
+            "image": "alur-dummy-2.jpeg"
+        },
+        {
+            "id": 3,
+            "title": "Booking Fee",
+            "description": "Jika sudah ditentukan, klien bisa melakukan Booking Fee agar proses bisa dilanjutkan",
+            "image": "alur-dummy-3.jpeg"
+        },
+        {
+            "id": 4,
+            "title": "Follow Up",
+            "description": "⁠Selanjutnya klien akan dihubungkan dengan Staff Legal yang akan membantu proses yang dibutuhkan",
+            "image": "alur-dummy-1.jpeg"
+        }
+    ],
+    "testimonies": [
+        {
+            "id": 1,
+            "title": "Highly Recommended",
+            "testimonial": "This company has provided excellent service and support. Highly recommended!",
+            "profile": {
+                "name": "John Doe",
+                "position": "CEO, Company X",
+                "photoUrl": "profile-dummy.jpeg"
+            }
+        },
+        {
+            "id": 2,
+            "title": "Amazing Experience!",
+            "testimonial": "Amazing experience! The team was responsive and delivered quality results.",
+            "profile": {
+                "name": "Jane Smith",
+                "position": "Manager, Company Y",
+                "photoUrl": "profile-dummy.jpeg"
+            }
+        },
+        {
+            "id": 3,
+            "title": "Top-notch service provider!",
+            "testimonial": "A top-notch service provider! We couldn’t be happier with the results.",
+            "profile": {
+                "name": "Sam Wilson",
+                "position": "CTO, Company Z",
+                "photoUrl": "profile-dummy.jpeg"
+            }
+        },
+        {
+            "id": 4,
+            "title": "Exceeded Expectations",
+            "testimonial": "The team exceeded our expectations! Every detail was handled with care.",
+            "profile": {
+                "name": "Michael Johnson",
+                "position": "Director, Company A",
+                "photoUrl": "profile-dummy.jpeg"
+            }
+        },
+        {
+            "id": 5,
+            "title": "Professional and Reliable",
+            "testimonial": "Professional, reliable, and supportive throughout the entire project.",
+            "profile": {
+                "name": "Emily Davis",
+                "position": "COO, Company B",
+                "photoUrl": "profile-dummy.jpeg"
+            }
+        }
+    ]
+}
+  

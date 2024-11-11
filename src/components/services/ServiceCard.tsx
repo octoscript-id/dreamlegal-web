@@ -1,11 +1,13 @@
 import { Badge } from "@/components/ui/badge";
+import { ServiceOption } from "@/types/Service";
 
 interface ServiceCardProps {
-    variant?: "yellow" | "green" | "purple" | "default" | "blue"
-    isLast?: boolean
+    variant: "yellow" | "green" | "purple" | "default" | "blue"
+    isLast: boolean
+    option: ServiceOption
 }
 
-export default function ServiceCard({variant, isLast}: ServiceCardProps) {
+export default function ServiceCard({option, variant, isLast}: ServiceCardProps) {
     const getVariantClasses = () => {
         switch (variant) {
             case "yellow":
@@ -20,23 +22,23 @@ export default function ServiceCard({variant, isLast}: ServiceCardProps) {
     }
 
     return (
-        <div className={`bg-white border border-brand-100 rounded-xl p-4 space-y-8 ${isLast && "md:max-xl:col-span-2"}`}>
+        <div className={`h-full flex flex-col bg-white border border-brand-100 rounded-xl p-4 gap-8 ${isLast && "md:max-xl:col-span-2"}`}>
             <div className="flex flex-col items-start space-y-3">
-                <Badge variant={variant} className="text-sm">JACK</Badge>
-                <Badge className="text-sm">Proses: 8-12 Hari kerja</Badge>
+                <Badge variant={variant} className="text-sm uppercase">{option.package}</Badge>
+                { option.duration && <Badge className="text-sm">Proses: {option.duration}</Badge> }
             </div>
-            <div className="space-y-3 text-sm">
+            <div className="grow space-y-3 text-sm">
                 <p>Apa yang akan kamu dapatkan: </p>
                 <ul className="list-none text-gray-700 space-y-3">
-                    <li className="before:content-['✔️'] before:tint-gray-50 before:mr-2">Pendaftaran Nama PT</li>
-                    <li className="before:content-['✔️'] before:text-gray-50 before:mr-2">Sertifikat Pendirian PT</li>
-                    <li className="before:content-['✔️'] before:text-gray-50 before:mr-2">Surat Pernyataan Pendirian PT</li>
-                    <li className="before:content-['✔️'] before:text-gray-50 before:mr-2">NPWP PT</li>
-                    <li className="before:content-['✔️'] before:text-gray-50 before:mr-2">15 KBLI Bidang Usaha</li>
+                    {
+                        option.features.map((feature, index) => {
+                            return <li key={index} className="before:content-['✔️'] before:tint-gray-50 before:mr-2">{feature}</li>
+                        })
+                    }
                 </ul>
             </div>
             <div className={`grid place-items-center py-6 text-2xl ${getVariantClasses()}`}>
-                Rp799.000
+                Rp{Intl.NumberFormat("id-ID").format(option.price)}
             </div>
         </div>
     );
