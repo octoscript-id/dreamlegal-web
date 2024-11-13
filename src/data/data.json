@@ -46,31 +46,31 @@
             "id": 1,
             "benefit": "Mudah",
             "description": "Pengurusan Legalitas Usaha Mudah",
-            "image": "alur-dummy-1.jpeg"
+            "icon": "listChecks"
         },
         {
             "id": 2,
             "benefit": "Efisiensi Waktu",
             "description": "Pengurusan Legalitas Usaha prosesnya cepat",
-            "image": "alur-dummy-2.jpeg"
+            "icon": "alarmClockCheck"
         },
         {
             "id": 3,
             "benefit": "Terjangkau",
             "description": "Biaya pengurusan yang terjangkau",
-            "image": "alur-dummy-3.jpeg"
+            "icon": "target"
         },
         {
             "id": 4,
             "benefit": "Fleksibel",
             "description": "Pelayanan Konsultasi sesuai kebutuhan klien",
-            "image": "alur-dummy-1.jpeg"
+            "icon": "layoutGrid"
         },
         {
             "id": 5,
             "benefit": "Aman",
             "description": "Kerahasiaan dan Perlindungan Data Pribadi/Perusahaan terjaga",
-            "image": "alur-dummy-2.jpeg"
+            "icon": "shieldCheck"
         }
     ],
     "services": [
