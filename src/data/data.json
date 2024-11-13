@@ -1073,27 +1073,27 @@
     "steps": [
         {
             "id": 1,
-            "title": "Pilih Jasa",
-            "description": "⁠Klien bisa memilih jasa apa yang akan digunakan",
-            "image": "alur-dummy-1.jpeg"
+            "title": "Pilih Layanan",
+            "description": "Anda dapat memilih jasa layanan yang ada sesuai dengan kebutuhan Anda.",
+            "image": "alur-dummy-0.jpeg"
         },
         {
             "id": 2,
-            "title": "Konsultasi",
-            "description": "Jika dirasa kebingungan, anda bisa menghubungi kami via WhatsApp untuk melakukan konsultasi secara gratis",
-            "image": "alur-dummy-2.jpeg"
+            "title": "Konsultasi Melalui WhatsApp",
+            "description": "Jika dirasa kebingungan, anda bisa menghubungi kami via WhatsApp untuk melakukan konsultasi secara gratis.",
+            "image": "alur-dummy-1.jpeg"
         },
         {
             "id": 3,
-            "title": "Booking Fee",
-            "description": "Jika sudah ditentukan, klien bisa melakukan Booking Fee agar proses bisa dilanjutkan",
+            "title": "Booking Layanan",
+            "description": "Jika sudah ditentukan, klien bisa melakukan Booking Fee agar proses bisa dilanjutkan.",
             "image": "alur-dummy-3.jpeg"
         },
         {
             "id": 4,
-            "title": "Follow Up",
-            "description": "⁠Selanjutnya klien akan dihubungkan dengan Staff Legal yang akan membantu proses yang dibutuhkan",
-            "image": "alur-dummy-1.jpeg"
+            "title": "Proses Pengerjaan",
+            "description": "Selanjutnya klien akan dihubungkan dengan Staff Legal yang akan membantu proses yang dibutuhkan.",
+            "image": "alur-dummy-2.jpeg"
         }
     ],
     "testimonies": [
