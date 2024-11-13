@@ -6,6 +6,7 @@ import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious
 import HomeServiceCard from "./HomeServiceCard";
 import { Service } from "@/types/Service";
 import { useRouter } from "next/navigation";
+import { cn } from "@/lib/utils";
 
 interface ServiceSectionProps {
     services: Service[]
@@ -35,7 +36,16 @@ export default function ServiceSection({services}: ServiceSectionProps) {
                     filteredServices.map((service) => {
                         return (
                             <CarouselItem key={service.id} className="md:basis-2/3 xl:basis-1/3">
-                                <HomeServiceCard service={service}/>
+                                <div>
+                                    <div className={
+                                        cn("flex items-center justify-center px-8 py-5 rounded-t-xl bg-brand-500 text-label-lg",
+                                            (!service.is_highlighted ? "invisible" : "text-white")
+                                        )
+                                    }>
+                                        PALING LARIS!
+                                    </div>
+                                    <HomeServiceCard service={service}/>
+                                </div>
                             </CarouselItem>
                         )
                     })

@@ -117,7 +117,7 @@
                             "duration": "1 Hari Kerja"
                         }
                     ],
-                    "is_highlighted": false
+                    "is_highlighted": true
                 },
                 {
                     "id": 2,
@@ -173,7 +173,7 @@
                             "duration": "3-5 Hari Kerja"
                         }
                     ],
-                    "is_highlighted": false
+                    "is_highlighted": true
                 },
                 {
                     "id": 3,
@@ -532,7 +532,7 @@
                             "duration": "3-5 Hari Kerja"
                         }
                     ],
-                    "is_highlighted": false
+                    "is_highlighted": true
                 },
                 {
                     "id": 9,
@@ -814,7 +814,7 @@
                             "duration": "5-10 Hari Kerja"
                         }
                     ],
-                    "is_highlighted": false
+                    "is_highlighted": true
                 } 
             ]
         },
@@ -967,7 +967,7 @@
                             "duration": "3-5 Hari Kerja"
                         }
                     ],
-                    "is_highlighted": false
+                    "is_highlighted": true
                 },
                 {
                     "id": 22,
@@ -1065,7 +1065,7 @@
                             ]
                         }
                     ],
-                    "is_highlighted": false
+                    "is_highlighted": true
                 }
             ]
         }
