@@ -10,7 +10,7 @@ interface ServiceCardHeaderProps {
 export default function ServiceCardHeader({startFrom, title, options}: ServiceCardHeaderProps) {
     return (
         <div className="p-0 w-full space-y-6 text-start">
-            <Badge variant="blue" className="text-sm">Start from {startFrom/1000}k</Badge>
+            <Badge variant="blue" className="text-sm font-semibold">Start from {startFrom/1000}k</Badge>
             <div className="space-y-3">
                 <h3 className="text-lg xl:text-[22px] font-medium">{title}</h3>
                 <div className="h-full group-data-[state=open]:hidden space-y-3">

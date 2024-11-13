@@ -1,6 +1,7 @@
 "use client"
 
 import { Service } from "@/types/Service";
+import { cn } from "@/lib/utils";
 import ServiceCardHeader from "./ServiceCardHeader";
 import ServiceDialog from "./ServiceDialog";
 
@@ -10,8 +11,8 @@ interface HomeServiceCardProps {
 
 export default function HomeServiceCard({service}: HomeServiceCardProps) {
     return (
-        <div className="border border-brand-100 rounded-xl flex flex-col h-full">
-            <div className="p-5 border-b border-brand-100 grow">
+        <div className={cn("border flex flex-col h-full", (service.is_highlighted ? "border-brand-500 rounded-b-xl" : "border-brand-100 rounded-xl"))}>
+            <div className={cn("p-5 border-b grow", (service.is_highlighted ? "border-brand-500" : "border-brand-100"))}>
               <ServiceCardHeader startFrom={service.options[0].price} title={service.title} options={service.options.flatMap((option) => option.package)} />
             </div>
             <div className="p-5">
