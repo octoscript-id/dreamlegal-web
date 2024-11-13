@@ -16,11 +16,11 @@ export default function BenefitSection({benefits}: BenefitSectionProps) {
         <div className="max-md:space-y-8 md:flex justify-between items-end gap-16">
           <div className="space-y-3">
             <h2 className="text-[28px] md:text-[32px] xl:text-[40px]">Kenapa Harus Memilih Dream Legal?</h2>
-            <p className="text-gray-700 max-w-xl">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+            <p className="text-gray-700 max-w-xl">Solusi hukum yang mudah, efisien, terjangkau, fleksibel, dan aman.</p>
           </div>
           <Button onClick={() => sendWhatsappMessage(CONTACT_NUMBER, CONTACT_MESSAGE)} variant="secondary" className="max-md:hidden">Konsultasi sekarang</Button>
         </div>
-        <div className="max-md:space-y-10 md:grid grid-cols-3 gap-8 xl:gap-14">
+        <div className="max-md:space-y-4 md:flex justify-center flex-wrap gap-6 xl:gap-8">
           {
             benefits.map((benefit) => {
               return (
