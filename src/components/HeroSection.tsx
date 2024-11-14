@@ -25,30 +25,30 @@ export default function HeroSection() {
                     </Button>
                 </section>
             </section>
-            <section className="grid grid-rows-2 grid-flow-col gap-3 w-full lg:w-fit">
+            <section className="grid grid-cols-2 grid-flow-row gap-3 w-full lg:w-fit">
                 <Image 
-                    src="/img/unsplash/image_1.png"
-                    alt="Unsplash Image 1"
-                    width={325}
-                    height={325}
-                    className="w-full"
+                    src="/img/unsplash/hero-banner-document.png"
+                    alt="Unsplash: Document"
+                    width={240}
+                    height={240}
+                    className="w-full h-32 md:h-40 lg:h-60 rounded-xl"
                 />
                 <Image 
                     src="/img/unsplash/image_2.png"
-                    alt="Unsplash Image 2"
-                    width={325}
-                    height={325}
-                    className="w-full"
+                    alt="Unsplash: Talking"
+                    width={240}
+                    height={240}
+                    className="w-full h-32 md:h-40 lg:h-60 rounded-xl"
                 />
                 <Image 
-                    src="/img/unsplash/image_3.png"
-                    alt="Unsplash Image 3"
-                    width={325}
-                    height={560}
-                    className="row-span-2 w-full"
+                    src="/img/unsplash/hero-banner-handshake.jpg"
+                    alt="Unsplash: Handshake"
+                    width={560}
+                    height={320}
+                    className="col-span-2 w-full h-40 md:h-60 lg:h-80 rounded-xl"
                 />
             </section>
-            <Button className="md:hidden w-full">
+            <Button onClick={() => sendWhatsappMessage(CONTACT_NUMBER, CONTACT_MESSAGE)} className="md:hidden w-full">
                 Konsultasi sekarang
             </Button>
         </section>

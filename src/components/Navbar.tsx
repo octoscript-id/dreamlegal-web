@@ -28,12 +28,12 @@ export default function Navbar() {
 
     return (
         <>
-        <nav className="bg-white px-12 py-5 flex items-center justify-between">
+        <nav className="bg-white px-12 py-3 flex items-center justify-between">
             <Link href="/">
                 <Image 
                     src="/img/Png 2.png"
                     alt="Dream Legal Logo"
-                    width={72}
+                    width={96}
                     height={48}
                     />
             </Link>
