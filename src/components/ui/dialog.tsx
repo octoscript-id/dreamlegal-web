@@ -4,6 +4,7 @@ import * as DialogPrimitive from "@radix-ui/react-dialog"
 import * as React from "react"
 
 import { cn } from "@/lib/utils"
+import { Cross1Icon } from "@radix-ui/react-icons"
 
 const Dialog = DialogPrimitive.Root
 
@@ -34,6 +35,11 @@ const DialogContent = React.forwardRef<
 >(({ className, children, ...props }, ref) => (
   <DialogPortal>
     <DialogOverlay />
+    <DialogClose asChild>
+      <div className="shrink-0 h-10 w-10 xl:h-14 xl:w-14 grid place-items-center bg-brand-50 border border-brand-100 rounded-full">
+        <Cross1Icon className="text-brand-900 h-4 w-4 xl:h-6 xl:w-6"/>
+      </div>
+    </DialogClose>
     <DialogPrimitive.Content
       ref={ref}
       className={cn(

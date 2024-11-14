@@ -24,9 +24,10 @@ export default function ServiceSection({services}: ServiceSectionProps) {
                     loop: true,
                     active: false,
                     breakpoints: {
-                    '(min-width: 768px)': { 
-                        active: true  
-                    }
+                        '(min-width: 768px)': { 
+                            active: true,
+                            align: "start",
+                        }
                     }
                 }}
                 className="relative"
@@ -35,11 +36,11 @@ export default function ServiceSection({services}: ServiceSectionProps) {
                 {
                     filteredServices.map((service) => {
                         return (
-                            <CarouselItem key={service.id} className="md:basis-2/3 xl:basis-1/3">
-                                <div>
+                            <CarouselItem key={service.id} className="md:basis-2/3 xl:basis-5/12">
+                                <div className="flex flex-col h-full">
                                     <div className={
-                                        cn("flex items-center justify-center px-8 py-5 rounded-t-xl bg-brand-500 text-label-lg",
-                                            (!service.is_highlighted ? "invisible" : "text-white")
+                                        cn("text-center px-8 py-5 rounded-t-xl bg-brand-500 text-label-lg",
+                                            (!service.is_highlighted ? "max-md:hidden md:invisible" : "text-white")
                                         )
                                     }>
                                         PALING LARIS!

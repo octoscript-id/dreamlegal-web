@@ -16,7 +16,7 @@ export default function ServicesHeader() {
                 <p className="text-gray-700 leading-6">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
             </div>
             <div className={`flex gap-4 max-md:justify-center`}>
-                <Button onClick={() => window.open(SERVICE_BROCHURE_URL, "_blank")} className={`max-xl:text-sm ${pathname == "/" && "max-md:rounded-full"}`}>
+                <Button variant={"tertiary"} onClick={() => window.open(SERVICE_BROCHURE_URL, "_blank")} className={`max-xl:text-sm ${pathname == "/" && "max-md:rounded-full"}`}>
                     {pathname == "/" ? "Unduh brosur layanan" : "Unduh brosur"}
                 </Button>
                 {
