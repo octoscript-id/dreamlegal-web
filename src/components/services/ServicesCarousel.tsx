@@ -3,12 +3,14 @@
 import { Service } from "@/types/Service";
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "../ui/carousel";
 import ServiceCard from "./ServiceCard";
+import { cn } from "@/lib/utils";
 
 interface ServicesCarouselProps {
     services: Service[]
+    hasHighlightedService: boolean
 }
 
-export default function ServicesCarousel({services}: ServicesCarouselProps) {
+export default function ServicesCarousel({services, hasHighlightedService}: ServicesCarouselProps) {
     return (
         <Carousel
             opts={{
@@ -28,7 +30,20 @@ export default function ServicesCarousel({services}: ServicesCarouselProps) {
                     services.map((service) => {
                         return (
                             <CarouselItem key={service.id} className="md:basis-2/3 xl:basis-5/12">
-                                <ServiceCard service={service} />
+                                <div className="flex flex-col h-full">
+                                    {
+                                        hasHighlightedService && (
+                                            <div className={
+                                                cn("text-center px-8 py-5 rounded-t-xl bg-brand-500 text-label-lg",
+                                                    (!service.is_highlighted ? "max-md:hidden md:invisible" : "text-white")
+                                                )
+                                            }>
+                                                PALING LARIS!
+                                            </div>
+                                        )
+                                    }
+                                    <ServiceCard service={service}/>
+                                </div>
                             </CarouselItem>
                         )
                     })
