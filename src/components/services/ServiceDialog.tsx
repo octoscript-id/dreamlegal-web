@@ -6,7 +6,7 @@ import {
 } from "@/components/ui/dialog";
 import { ScrollArea } from "@/components/ui/scroll-area";
 import { VisuallyHidden } from "@radix-ui/react-visually-hidden";
-import ServiceCard from "./ServiceCard";
+import ServiceCard from "./OptionCard";
 import { Service } from "@/types/Service";
 import { checkIsLast, getVariant } from "@/lib/utils";
 import { Button } from "../ui/button";
