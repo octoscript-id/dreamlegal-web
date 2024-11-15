@@ -660,7 +660,11 @@
                         {
                             "package": "Cek Merek",
                             "price": 0,
-                            "features": [],
+                            "features": [
+                                "Penelusuran Merek Di Website Resmi Merek Nasional dan Internasional",
+                                "⁠Analisa Nama Merek",
+                                "Analisa Logo Merek"
+                            ],
                             "duration": "1 Hari Kerja"
                         },
                         {

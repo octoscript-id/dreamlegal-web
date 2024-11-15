@@ -8,7 +8,7 @@ import { ScrollArea } from "@/components/ui/scroll-area";
 import { VisuallyHidden } from "@radix-ui/react-visually-hidden";
 import ServiceCard from "./OptionCard";
 import { Service } from "@/types/Service";
-import { checkIsLast, getVariant } from "@/lib/utils";
+import { checkIsLast, formatPriceToK, getVariant } from "@/lib/utils";
 import { Button } from "../ui/button";
 import { sendWhatsappMessage } from "@/lib/sendWhatsappMessage";
 import { CONTACT_NUMBER } from "@/static/Contact";
@@ -41,7 +41,7 @@ export default function ServiceDialog({service}: ServiceDialogProps) {
           <ScrollArea className="max-h-[calc(100vh-96px)] border bg-brand-25 rounded-xl p-8 shadow-lg">
             <div className="space-y-6 xl:space-y-10">
               <div className="space-y-6">
-                <Badge variant="blue" className="text-sm font-semibold">Start from {service.options[0].price/1000}k</Badge>
+                <Badge variant="blue" className="text-sm font-semibold">Mulai dari {formatPriceToK(service.options[0].price)}</Badge>
                 <div className="flex justify-between items-end">
                   <div className="space-y-2">
                     <h3 className="text-lg xl:text-[22px] font-medium">{service.title}</h3>

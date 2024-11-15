@@ -18,7 +18,7 @@ export default function HeroSection() {
                 <span className="text-brand-700">Legal Partner</span> For Your Business
             </h1>
             <p className="text-sm md:text-body-xl text-center lg:text-left">
-                Start your business with Dream Legal — Penyedia jasa legal online untuk membantu Anda memulai bisnis di Indonesia.
+                Start your business with Dream Legal — Penyedia jasa legal untuk membantu Anda memulai bisnis di Indonesia.
             </p>
             <Button onClick={() => sendWhatsappMessage(CONTACT_NUMBER, CONTACT_MESSAGE)} className="w-fit hidden md:block">
                 Konsultasi sekarang
