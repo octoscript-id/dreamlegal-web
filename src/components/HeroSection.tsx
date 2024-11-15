@@ -8,7 +8,7 @@ import { Button } from "./ui/button";
 
 export default function HeroSection() {
     return (
-        <section id="hero-banner" className="pt-6 xl:pt-12 pb-12 md:pb-14 xl:pb-[72px] flex flex-col gap-10 items-center md:items-start lg:flex-row lg:justify-between w-full">
+        <section id="hero-banner" className="pt-6 xl:pt-12 pb-12 md:pb-14 xl:pb-[72px] flex flex-col gap-10 items-center md:items-start lg:flex-row lg:justify-center w-full">
             <section className="flex flex-col justify-between max-w-md">
                 <section className="flex flex-col items-center md:items-start gap-4">
                     <Badge variant="blue" className="w-fit">
@@ -31,21 +31,21 @@ export default function HeroSection() {
                     alt="Unsplash: Document"
                     width={240}
                     height={240}
-                    className="w-full h-32 md:h-40 lg:h-60 rounded-xl"
+                    className="w-full h-32 md:h-40 lg:h-60 rounded-xl object-cover"
                 />
                 <Image 
                     src="/img/unsplash/image_2.png"
                     alt="Unsplash: Talking"
                     width={240}
                     height={240}
-                    className="w-full h-32 md:h-40 lg:h-60 rounded-xl"
+                    className="w-full h-32 md:h-40 lg:h-60 rounded-xl object-cover" 
                 />
                 <Image 
                     src="/img/unsplash/hero-banner-handshake.jpg"
                     alt="Unsplash: Handshake"
                     width={560}
                     height={320}
-                    className="col-span-2 w-full h-40 md:h-60 lg:h-80 rounded-xl"
+                    className="col-span-2 w-full h-52 md:h-60 lg:h-80 rounded-xl object-cover"
                 />
             </section>
             <Button onClick={() => sendWhatsappMessage(CONTACT_NUMBER, CONTACT_MESSAGE)} className="md:hidden w-full">
