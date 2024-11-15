@@ -9,15 +9,15 @@ import { CONTACT_MESSAGE, CONTACT_NUMBER } from "@/static/Contact"
 export default function Navbar() {
     const links = [
         {
-            text: 'Benefit',
-            href: '/#benefit',
-        },
-        {
             text: 'Layanan',
             href: '/services',
         },
         {
-            text: 'Alur Kerja',
+            text: 'Benefit',
+            href: '/#benefit',
+        },
+        {
+            text: 'Alur Layanan',
             href: '/#alur',
         },
         // {
