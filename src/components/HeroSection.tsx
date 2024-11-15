@@ -101,7 +101,7 @@ export default function HeroSection() {
       animate="visible"
       className="font-display text-2xl md:text-display-md lg:text-display-lg text-center lg:text-left flex flex-wrap justify-center lg:justify-start"
     >
-      <motion.span className="text-brand-700 inline-flex">
+      <motion.span className="text-brand-700">
         {"Legal Partner".split("").map((char, index) => (
           <motion.span
             key={`colored-${index}`}
