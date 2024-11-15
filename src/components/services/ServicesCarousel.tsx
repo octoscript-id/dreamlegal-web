@@ -49,7 +49,7 @@ export default function ServicesCarousel({services, hasHighlightedService}: Serv
                     })
                 }
             </CarouselContent>
-            <div className="max-md:hidden relative mt-10 flex justify-between">
+            <div className="max-md:hidden relative mt-10 flex justify-end gap-2">
                 <CarouselPrevious />
                 <CarouselNext />
             </div>

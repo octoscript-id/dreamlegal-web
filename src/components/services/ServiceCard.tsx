@@ -17,12 +17,12 @@ export default function ServiceCard({service}: ServiceCardProps) {
           <Badge variant="blue" className="text-sm font-semibold">Start from {service.options[0].price/1000}k</Badge>
           <div className="h-full flex flex-col space-y-6">
             <div className="space-y-3">
-              <h3 className="text-lg xl:text-[22px] font-medium">{service.title}</h3>
+              <h3 className="text-lg xl:text-[22px] font-bold">{service.title}</h3>
               <p className="text-gray-700">Cocok untuk Anda yang ingin membuka Usaha Mikro dan Kecil (UMKM)</p>
             </div>
             <Separator />
             <div className="h-full space-y-3 grow">
-              <p>Apa yang akan kamu dapatkan:</p>
+              <p className="font-semibold">Apa yang akan kamu dapatkan:</p>
               <ul className="list-none text-gray-700 space-y-3">
                 {
                     service.options[0].features.map((feature, index) => {
@@ -38,8 +38,8 @@ export default function ServiceCard({service}: ServiceCardProps) {
                   {
                       service.options.map((option, index) => {
                           return (
-                            <Badge key={index} variant={getVariant(index)} className="xl:text-sm text-nowrap">
-                              {option.package} 
+                            <Badge key={index} variant={getVariant(index)} className="xl:text-sm text-nowrap font-bold">
+                              {option.package}  
                               {
                                 !!option.duration && <span>&nbsp;({option.duration})</span>
                               }
