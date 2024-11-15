@@ -20,10 +20,10 @@ export default function Navbar() {
             text: 'Alur Kerja',
             href: '/#alur',
         },
-        {
-            text: 'Testimoni',
-            href: '/#testimoni',
-        },
+        // {
+        //     text: 'Testimoni',
+        //     href: '/#testimoni',
+        // },
     ]
 
     return (
