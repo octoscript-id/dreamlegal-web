@@ -30,7 +30,7 @@ export default function ServiceDialog({service}: ServiceDialogProps) {
             >
             Pilih layanan
           </Button>
-          <DialogTrigger className="w-full px-6 py-4 bg-gray-100 text-gray-800 shadow-sm hover:bg-gray-200 active:bg-gray-300 inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-base font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0">
+          <DialogTrigger className="w-full px-6 py-4 bg-gray-100 text-gray-800 shadow-sm hover:bg-gray-200 active:bg-gray-300 inline-flex items-center justify-center gap-2 whitespace-nowrap rounded text-base font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0">
             Lihat detail
           </DialogTrigger>
         </div>

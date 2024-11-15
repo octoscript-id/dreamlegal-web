@@ -20,15 +20,15 @@ export default function Navbar() {
             text: 'Alur Kerja',
             href: '/#alur',
         },
-        {
-            text: 'Testimoni',
-            href: '/#testimoni',
-        },
+        // {
+        //     text: 'Testimoni',
+        //     href: '/#testimoni',
+        // },
     ]
 
     return (
         <>
-        <nav className="bg-white px-12 py-3 flex items-center justify-between">
+        <nav className="bg-white px-12 md:py-3 flex items-center justify-between">
             <Link href="/">
                 <Image 
                     src="/img/Png 2.png"
