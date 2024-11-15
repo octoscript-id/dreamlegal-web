@@ -12,7 +12,7 @@ interface ServiceSectionProps {
 
 export default function ServiceSection({services}: ServiceSectionProps) {
     const router = useRouter()
-    const selectedServices = [1, 5, 10, 15, 19]
+    const selectedServices = [1, 5, 20, 15, 19]
     const filteredServices = services.filter((service) => selectedServices.includes(service.id));
     const hasHighlightedService = filteredServices.some(service => service.is_highlighted === true);
     

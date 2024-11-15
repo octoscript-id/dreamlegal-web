@@ -173,7 +173,7 @@
                             "duration": "3-5 Hari Kerja"
                         }
                     ],
-                    "is_highlighted": true
+                    "is_highlighted": false
                 },
                 {
                     "id": 3,
@@ -650,6 +650,113 @@
             ]
         },
         {
+            "id": 5,
+            "category": "Kekayaan Intelektual",
+            "services": [
+                {
+                    "id": 20,
+                    "title": "HAKI Merek",
+                    "options": [
+                        {
+                            "package": "Cek Merek",
+                            "price": 0,
+                            "features": [],
+                            "duration": "1 Hari Kerja"
+                        },
+                        {
+                            "package": "Daftar Merek",
+                            "price": 2699000,
+                            "features": [
+                                "1 Kali Cek Nama Merek Manual",
+                                "1 Kali Cek AI",
+                                "Rekomendasi Kelas Merek",
+                                "Bukti Permohonan Merek DJKI",
+                                "Softcopy Sertifikat Merek"
+                            ],
+                            "duration": "1 Hari Kerja"
+                        },
+                        {
+                            "package": "Perpanjang Merek (Sebelum Exp)",
+                            "price": 3099000,
+                            "features": [
+                                "Bukti Perpanjangan Merek",
+                                "Softcopy Sertifikat Perpanjangan Merek"
+                            ],
+                            "duration": "5 Hari Kerja"
+                        },
+                        {
+                            "package": "Perpanjang Merek (Setelah Exp)",
+                            "price": 5299000,
+                            "features": [
+                                "Bukti Perpanjangan Merek",
+                                "Softcopy Sertifikat Perpanjangan Merek"
+                            ],
+                            "duration": "5 Hari Kerja"
+                        }
+                    ],
+                    "is_highlighted": true
+                },
+                {
+                    "id": 21,
+                    "title": "Pengalihan Merek",
+                    "options": [
+                        {
+                            "package": "Exclude Akta",
+                            "price": 1499000,
+                            "features": [
+                                "Bukti Pencatatan Pengalihan Hak Atas Merek DJKI"
+                            ],
+                            "duration": "1-2 Hari Kerja"
+                        },
+                        {
+                            "package": "Include Akta",
+                            "price": 3699000,
+                            "features": [
+                                "Akta Pengalihan Merek",
+                                "Bukti Pencatatan Pengalihan Hak Atas Merek DJKI"
+                            ],
+                            "duration": "3-5 Hari Kerja"
+                        }
+                    ],
+                    "is_highlighted": false
+                },
+                {
+                    "id": 22,
+                    "title": "HAKI",
+                    "options": [
+                        {
+                            "package": "Hak Cipta",
+                            "price": 1499000,
+                            "features": [
+                                "Konsultasi Hak Cipta",
+                                "Surat Pencatatan Ciptaan dari DJKI"
+                            ],
+                            "duration": "2-3 Hari Kerja"
+                        },
+                        {
+                            "package": "Hak Paten",
+                            "price": 2499000,
+                            "features": [
+                                "Konsultasi Hak Paten",
+                                "Surat Pencatatan dari DJKI"
+                            ],
+                            "duration": "2-3 Hari Kerja"
+                        },
+                        {
+                            "package": "Desain Industri",
+                            "price": 1999000,
+                            "features": [
+                                "Konsultasi Desain Industri",
+                                "Surat Permohonan Desain Industri"
+                            ],
+                            "duration": "2-3 Hari Kerja"
+                        }
+                    ],
+                    "is_highlighted": false
+                }
+            ]
+        },
+        {
             "id": 2,
             "category": "Perubahan Usaha",
             "services": [
@@ -896,113 +1003,6 @@
                     ],
                     "is_highlighted": false
                 }    
-            ]
-        },
-        {
-            "id": 5,
-            "category": "Kekayaan Intelektual",
-            "services": [
-                {
-                    "id": 20,
-                    "title": "HAKI Merek",
-                    "options": [
-                        {
-                            "package": "Cek Merek",
-                            "price": 0,
-                            "features": [],
-                            "duration": "1 Hari Kerja"
-                        },
-                        {
-                            "package": "Daftar Merek",
-                            "price": 2699000,
-                            "features": [
-                                "1 Kali Cek Nama Merek Manual",
-                                "1 Kali Cek AI",
-                                "Rekomendasi Kelas Merek",
-                                "Bukti Permohonan Merek DJKI",
-                                "Softcopy Sertifikat Merek"
-                            ],
-                            "duration": "1 Hari Kerja"
-                        },
-                        {
-                            "package": "Perpanjang Merek (Sebelum Exp)",
-                            "price": 3099000,
-                            "features": [
-                                "Bukti Perpanjangan Merek",
-                                "Softcopy Sertifikat Perpanjangan Merek"
-                            ],
-                            "duration": "5 Hari Kerja"
-                        },
-                        {
-                            "package": "Perpanjang Merek (Setelah Exp)",
-                            "price": 5299000,
-                            "features": [
-                                "Bukti Perpanjangan Merek",
-                                "Softcopy Sertifikat Perpanjangan Merek"
-                            ],
-                            "duration": "5 Hari Kerja"
-                        }
-                    ],
-                    "is_highlighted": false
-                },
-                {
-                    "id": 21,
-                    "title": "Pengalihan Merek",
-                    "options": [
-                        {
-                            "package": "Exclude Akta",
-                            "price": 1499000,
-                            "features": [
-                                "Bukti Pencatatan Pengalihan Hak Atas Merek DJKI"
-                            ],
-                            "duration": "1-2 Hari Kerja"
-                        },
-                        {
-                            "package": "Include Akta",
-                            "price": 3699000,
-                            "features": [
-                                "Akta Pengalihan Merek",
-                                "Bukti Pencatatan Pengalihan Hak Atas Merek DJKI"
-                            ],
-                            "duration": "3-5 Hari Kerja"
-                        }
-                    ],
-                    "is_highlighted": true
-                },
-                {
-                    "id": 22,
-                    "title": "HAKI",
-                    "options": [
-                        {
-                            "package": "Hak Cipta",
-                            "price": 1499000,
-                            "features": [
-                                "Konsultasi Hak Cipta",
-                                "Surat Pencatatan Ciptaan dari DJKI"
-                            ],
-                            "duration": "2-3 Hari Kerja"
-                        },
-                        {
-                            "package": "Hak Paten",
-                            "price": 2499000,
-                            "features": [
-                                "Konsultasi Hak Paten",
-                                "Surat Pencatatan dari DJKI"
-                            ],
-                            "duration": "2-3 Hari Kerja"
-                        },
-                        {
-                            "package": "Desain Industri",
-                            "price": 1999000,
-                            "features": [
-                                "Konsultasi Desain Industri",
-                                "Surat Permohonan Desain Industri"
-                            ],
-                            "duration": "2-3 Hari Kerja"
-                        }
-                    ],
-                    "is_highlighted": false
-                }
             ]
         },
         {
