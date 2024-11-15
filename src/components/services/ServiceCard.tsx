@@ -1,7 +1,7 @@
 "use client"
 
 import { Service } from "@/types/Service";
-import { cn, getVariant } from "@/lib/utils";
+import { cn, formatPriceToK, getVariant } from "@/lib/utils";
 import ServiceDialog from "./ServiceDialog";
 import { Badge } from "../ui/badge";
 import { Separator } from "../ui/separator";
@@ -14,7 +14,7 @@ export default function ServiceCard({service}: ServiceCardProps) {
     return (
       <div className={cn("bg-gray-0 border flex flex-col h-full", (service.is_highlighted ? "border-brand-500 rounded-b-xl" : "border-brand-100 rounded-xl"))}>
         <div className={cn("flex flex-col items-start gap-8 p-8 border-b grow", (service.is_highlighted ? "border-brand-500" : "border-brand-100"))}>
-          <Badge variant="blue" className="text-sm font-semibold">Start from {service.options[0].price/1000}k</Badge>
+          <Badge variant="blue" className="text-sm font-semibold">Mulai dari {formatPriceToK(service.options[0].price)}</Badge>
           <div className="h-full flex flex-col space-y-6">
             <div className="space-y-3">
               <h3 className="text-lg xl:text-[22px] font-bold">{service.title}</h3>

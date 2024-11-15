@@ -30,3 +30,8 @@ export const getVariant = (index: number) => {
 export const checkIsLast = (service: Service, index: number) => {
   return service.options.length % 2 != 0 && index == (service.options.length-1)
 }
+
+export const formatPriceToK = (price: number): string => {
+  const priceInK = price / 1000;
+  return `Rp ${priceInK.toLocaleString('id-ID')}K`;
+}
