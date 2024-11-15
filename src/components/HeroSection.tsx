@@ -45,7 +45,38 @@ const imageVariants = {
   },
 };
 
+const h1Variants = {
+  hidden: { opacity: 0 },
+  visible: {
+    opacity: 1,
+    transition: {
+      staggerChildren: 0.05,
+    },
+  },
+};
+
+const textVariants = {
+  hidden: { opacity: 0 },
+  visible: {
+    opacity: 1,
+    transition: {
+      staggerChildren: 0.02,
+    },
+  },
+};
+
+const letterVariants = {
+  hidden: { opacity: 0, y: 50 },
+  visible: {
+    opacity: 1,
+    y: 0,
+  },
+};
+
 export default function HeroSection() {
+  const pText =
+    "Start your business with Dream Legal — Penyedia jasa legal untuk membantu Anda memulai bisnis di Indonesia.";
+
   return (
     <motion.section
       initial="hidden"
@@ -65,19 +96,50 @@ export default function HeroSection() {
           </motion.div>
 
           <motion.h1
-            variants={itemVariants}
-            className="font-display text-2xl md:text-display-md lg:text-display-lg text-center lg:text-left"
+      variants={h1Variants}
+      initial="hidden"
+      animate="visible"
+      className="font-display text-2xl md:text-display-md lg:text-display-lg text-center lg:text-left flex flex-wrap justify-center lg:justify-start"
+    >
+      <motion.span className="text-brand-700 inline-flex">
+        {"Legal Partner".split("").map((char, index) => (
+          <motion.span
+            key={`colored-${index}`}
+            variants={letterVariants}
+            className={char === " " ? "mr-1" : ""}
           >
-            <span className="text-brand-700">Legal Partner</span> For Your
-            Business
-          </motion.h1>
+            {char}
+          </motion.span>
+        ))}
+      </motion.span>
+      <motion.span className="inline-flex">
+        {"For Your Business".split("").map((char, index) => (
+          <motion.span
+            key={`regular-${index}`}
+            variants={letterVariants}
+            className={char === " " ? "mr-1" : ""}
+          >
+            {char}
+          </motion.span>
+        ))}
+      </motion.span>
+    </motion.h1>
 
           <motion.p
-            variants={itemVariants}
+            variants={textVariants}
+            initial="hidden"
+            animate="visible"
             className="text-sm md:text-body-xl text-center lg:text-left"
           >
-            Start your business with Dream Legal — Penyedia jasa legal untuk
-            membantu Anda memulai bisnis di Indonesia.
+            {pText.split("").map((char, index) => (
+              <motion.span
+                key={index}
+                variants={letterVariants}
+                className={char === " " ? "mr-1" : ""}
+              >
+                {char}
+              </motion.span>
+            ))}
           </motion.p>
 
           <motion.div
