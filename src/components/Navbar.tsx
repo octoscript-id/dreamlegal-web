@@ -33,8 +33,8 @@ export default function Navbar() {
                 <Image 
                     src="/img/Png 2.png"
                     alt="Dream Legal Logo"
-                    width={96}
-                    height={48}
+                    width={132}
+                    height={64}
                     />
             </Link>
             <ul className="hidden md:flex items-center justify-center gap-4">
@@ -50,7 +50,10 @@ export default function Navbar() {
                     ))
                 }
             </ul>
-            <Button onClick={() => sendWhatsappMessage(CONTACT_NUMBER, CONTACT_MESSAGE)} variant="secondary">
+            <Button onClick={() => sendWhatsappMessage(CONTACT_NUMBER, CONTACT_MESSAGE)} variant="secondary" size="sm" className="md:hidden">
+                Hubungi Kami
+            </Button>
+            <Button onClick={() => sendWhatsappMessage(CONTACT_NUMBER, CONTACT_MESSAGE)} variant="secondary" className="hidden md:block">
                 Hubungi Kami
             </Button>
         </nav>

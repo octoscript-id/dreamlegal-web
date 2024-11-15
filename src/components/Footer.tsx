@@ -62,7 +62,7 @@ export default function Footer() {
                             <div className="flex flex-col gap-2 pr-3 py-2">
                                 <h4 className="text-gray-900 text-body-lg">Whatsapp</h4>
                                 <Badge className="w-fit">
-                                    +62 851-7000-9001
+                                    +62 877-2272-7077
                                 </Badge>
                             </div>
                         </div>
