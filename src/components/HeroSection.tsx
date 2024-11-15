@@ -10,21 +10,38 @@ const heroVariants = {
   hidden: { opacity: 0 },
   visible: {
     opacity: 1,
-    transition: { staggerChildren: 0.2 },
+    transition: {
+      staggerChildren: 0.5,
+      duration: 1.2,
+      ease: "easeOut",
+    },
   },
 };
 
 const itemVariants = {
-  hidden: { opacity: 0, y: 20 },
-  visible: { opacity: 1, y: 0 },
+  hidden: { opacity: 0, y: 30 },
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      duration: 0.8,
+      ease: "easeOut",
+      type: "tween",
+    },
+  },
 };
 
 const imageVariants = {
-  hidden: { scale: 0.8, opacity: 0 },
+  hidden: { scale: 0.9, opacity: 0 },
   visible: {
     scale: 1,
     opacity: 1,
-    transition: { type: "spring", stiffness: 100 },
+    transition: {
+      type: "spring",
+      stiffness: 50,
+      damping: 15,
+      duration: 1.2,
+    },
   },
 };
 
