@@ -18,7 +18,7 @@ export default function Navbar() {
       href: "/#benefit",
     },
     {
-      text: "Alur Layanan",
+      text: "Alur Kerja",
       href: "/#alur",
     },
     // {
@@ -32,23 +32,26 @@ export default function Navbar() {
       <motion.nav
         initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: 1, y: 0 }}
-        className="bg-white px-12 md:py-3 flex items-center justify-between"
+        className="bg-white px-4 md:px-6 xl:px-12 py-5 md:py-3 flex items-center justify-between"
       >
         <Link href="/">
-          <Image
-            src="/img/Png 2.png"
-            alt="Dream Legal Logo"
-            width={132}
-            height={64}
-          />
+          <div className="relative h-12 aspect-[59/40]">
+            <Image
+              src="/img/logo-w-text.png"
+              alt="Dream Legal Logo"
+              sizes="59px"
+              fill
+              className="object-contain"
+            />
+          </div>
         </Link>
-        <ul className="hidden md:flex items-center justify-center gap-4">
+        <ul className="hidden md:flex items-center justify-center gap-2 xl:gap-4">
           {links.map((link, key) => (
             <motion.li
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.95 }}
               key={key}
-              className="text-gray-700 text-body-lg px-3 py-2"
+              className="text-gray-700 text-sm xl:text-body-lg px-4 py-3"
             >
               <Link href={link.href}>{link.text}</Link>
             </motion.li>
@@ -58,14 +61,7 @@ export default function Navbar() {
           onClick={() => sendWhatsappMessage(CONTACT_NUMBER, CONTACT_MESSAGE)}
           variant="secondary"
           size="sm"
-          className="md:hidden"
-        >
-          Hubungi Kami
-        </Button>
-        <Button
-          onClick={() => sendWhatsappMessage(CONTACT_NUMBER, CONTACT_MESSAGE)}
-          variant="secondary"
-          className="hidden md:block"
+          className="max-md:py-3 md:text-sm"
         >
           Hubungi Kami
         </Button>

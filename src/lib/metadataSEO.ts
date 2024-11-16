@@ -8,7 +8,7 @@ export const metadataSEO = {
       "Solusi layanan hukum terpercaya di Indonesia. Konsultasi dengan konsultan hukum berpengalaman untuk pendirian PT, perizinan usaha, dan hak kekayaan intelektual.",
     images: [
       {
-        url: "/img/Png 2.png",
+        url: "/img/logo-w-text.png",
         alt: "Dream Legal - Layanan Hukum Terpercaya",
       },
     ],

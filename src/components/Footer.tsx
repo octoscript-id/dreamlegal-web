@@ -24,7 +24,7 @@ export default function Footer() {
             <section className="bg-gray-50 p-8 flex flex-col lg:flex-row justify-between">
                 <section id="left-footer">
                     <Image 
-                        src="/img/Png 2.png"
+                        src="/img/logo-w-text.png"
                         alt="Dream Legal Logo"
                         width={72}
                         height={48}

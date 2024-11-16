@@ -24,7 +24,7 @@ const getIcon = (iconName: string) => {
 
 export default function BenefitCard({benefit}: BenefitCardProps) {
     return (
-        <div className={`p-4 w-full md:w-[calc(50%-16px)] xl:w-[calc(34%-32px)] md:p-6 xl:p-8 flex items-start gap-6 border border-brand-100 rounded-xl`}>
+        <div className={`p-4 w-full md:w-[calc(50%-16px)] xl:w-[calc(34%-36px)] md:p-6 xl:p-8 flex items-start gap-6 border border-brand-100 rounded-xl`}>
             <div className="bg-brand-50 rounded-full p-4 grid place-items-center">
                 {getIcon(benefit.icon)}
             </div>
