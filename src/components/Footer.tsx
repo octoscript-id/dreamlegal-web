@@ -21,14 +21,17 @@ export default function Footer() {
     return (
         <>
         <footer className="p-6">
-            <section className="bg-gray-50 p-8 flex flex-col lg:flex-row justify-between">
-                <section id="left-footer">
-                    <Image 
+            <section className="bg-gray-50 p-8 flex flex-col lg:flex-row gap-10 justify-between">
+                <section id="left-footer" className="space-y-3">
+                    <div className="relative h-10 md:h-12 aspect-[59/40]">
+                        <Image
                         src="/img/logo-w-text.png"
                         alt="Dream Legal Logo"
-                        width={72}
-                        height={48}
-                    />
+                        sizes="59px"
+                        fill
+                        className="object-contain"
+                        />
+                    </div>
                     <h1 className="text-display-xs text-gray-900 font-display">
                         <span className="text-brand-700">Legal Partner </span>
                         <br></br>
