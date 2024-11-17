@@ -35,15 +35,23 @@ export default function Navbar() {
         className="bg-white px-4 md:px-6 xl:px-12 py-5 md:py-3 flex items-center justify-between"
       >
         <Link href="/">
-          <div className="relative h-10 md:h-12 aspect-[59/40]">
+          <motion.div
+            className="relative h-10 md:h-12 aspect-[59/40]"
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
+            transition={{ type: "spring", stiffness: 400 }}
+          >
             <Image
               src="/img/logo-w-text.png"
               alt="Dream Legal Logo"
               sizes="59px"
               fill
               className="object-contain"
+              style={{
+                filter: "drop-shadow(0px 2px 4px rgba(0,0,0,0.1))",
+              }}
             />
-          </div>
+          </motion.div>
         </Link>
         <ul className="hidden md:flex items-center justify-center gap-2 xl:gap-4">
           {links.map((link, key) => (
@@ -57,14 +65,32 @@ export default function Navbar() {
             </motion.li>
           ))}
         </ul>
-        <Button
-          onClick={() => sendWhatsappMessage(CONTACT_NUMBER, CONTACT_MESSAGE)}
-          variant="secondary"
-          size="sm"
-          className="max-md:py-3 md:text-sm"
+        <motion.div
+          whileHover={{ scale: 1.05 }}
+          whileTap={{ scale: 0.95 }}
+          transition={{ type: "spring", stiffness: 400 }}
         >
-          Hubungi Kami
-        </Button>
+          <Button
+            onClick={() => sendWhatsappMessage(CONTACT_NUMBER, CONTACT_MESSAGE)}
+            variant="secondary"
+            size="sm"
+            className="max-md:py-3 md:text-sm group relative overflow-hidden hover:shadow-lg transition-shadow"
+          >
+            <motion.span
+              initial={{ y: 0 }}
+              whileHover={{ y: -2 }}
+              className="relative z-10"
+            >
+              Hubungi Kami
+            </motion.span>
+            <motion.div
+              className="absolute inset-0 bg-brand-100 opacity-0 group-hover:opacity-20 transition-opacity"
+              initial={{ x: "-100%" }}
+              whileHover={{ x: "0%" }}
+              transition={{ type: "tween", duration: 0.3 }}
+            />
+          </Button>
+        </motion.div>
       </motion.nav>
     </>
   );
