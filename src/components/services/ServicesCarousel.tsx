@@ -63,7 +63,7 @@ export default function ServicesCarousel({
               {hasHighlightedService && (
                 <div
                   className={cn(
-                    "text-center px-8 py-5 rounded-t-xl bg-brand-500 text-label-lg",
+                    "text-center px-8 py-5 rounded-t-xl bg-brand-500 text-label-lg font-bold",
                     !service.is_highlighted
                       ? "max-md:hidden md:invisible"
                       : "text-white"
