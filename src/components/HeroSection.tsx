@@ -101,7 +101,7 @@ export default function HeroSection() {
               animate="visible"
               className="font-display text-display-sm md:text-display-md flex flex-wrap justify-center md:justify-start"
             >
-              <motion.span className="text-brand-700 inline-flex">
+              <motion.span className="text-brand-700">
                 {"Legal Partner ".split("").map((char, index) => (
                   <motion.span
                     key={`colored-${index}`}
@@ -112,7 +112,7 @@ export default function HeroSection() {
                   </motion.span>
                 ))}
               </motion.span>
-              <motion.span className="inline-flex">
+              <motion.span className="">
                 {"For Your Business".split("").map((char, index) => (
                   <motion.span
                     key={`regular-${index}`}
