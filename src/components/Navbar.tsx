@@ -36,7 +36,7 @@ export default function Navbar() {
       >
         <Link href="/">
           <motion.div
-            className="relative h-10 md:h-12 aspect-[59/40]"
+            className="relative h-16 aspect-[59/40]"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
             transition={{ type: "spring", stiffness: 400 }}
