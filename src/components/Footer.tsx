@@ -9,10 +9,6 @@ export default function Footer() {
             'href': '/'
         },
         {
-            'name': 'LinkedIn',
-            'href': '/'
-        },
-        {
             'name': 'TikTok',
             'href': '/'
         },
