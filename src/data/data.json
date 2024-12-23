@@ -178,7 +178,7 @@
                 {
                     "id": 3,
                     "title": "Pendirian PT Perseroan",
-                    "subtitle": "Modal Di Bawah 1 M",
+                    "subtitle": "Untuk Modal Di Bawah 1M. Cocok untuk Anda yang ingin membuka Usaha Mikro dan Kecil (UMKM)",
                     "options": [
                         {
                             "package": "Jack",
@@ -235,7 +235,7 @@
                 {
                     "id": 4,
                     "title": "Pendirian PT Perseroan",
-                    "subtitle": "Modal Di Bawah 1 M + Pendaftaran BNRI",
+                    "subtitle": "Untuk Modal Di Bawah 1 M + Pendaftaran BNRI. Cocok untuk Anda yang ingin membuka Usaha Mikro dan Kecil (UMKM)",
                     "options": [
                         {
                             "package": "Jack",
@@ -298,7 +298,7 @@
                 {
                     "id": 5,
                     "title": "Pendirian PT Perseroan",
-                    "subtitle": "Modal Di Atas 1 M",
+                    "subtitle": "Untuk Modal Di Atas 1M. Cocok untuk Anda yang ingin membuka Usaha Mikro dan Kecil (UMKM).",
                     "options": [
                         {
                             "package": "Jack",
@@ -355,7 +355,7 @@
                 {
                     "id": 6,
                     "title": "Pendirian PT Perseroan",
-                    "subtitle": "Modal Di Atas 1 M + Pendaftaran BNRI",
+                    "subtitle": "Untuk Modal Di Atas 1 M + Pendaftaran BNRI. Cocok untuk Anda yang ingin membuka Usaha Mikro dan Kecil (UMKM).",
                     "options": [
                         {
                             "package": "Jack",
@@ -537,7 +537,7 @@
                 {
                     "id": 9,
                     "title": "Pendirian Yayasan",
-                    "subtitle": "Modal Rp10 Juta - Rp25 Juta",
+                    "subtitle": "Untuk Modal Rp10 Juta - Rp25 Juta. Cocok untuk Anda yang ingin membuka Usaha Mikro dan Kecil (UMKM).",
                     "options": [
                         {
                             "package": "Jack",
@@ -575,7 +575,7 @@
                 {
                     "id": 10,
                     "title": "Pendirian Yayasan",
-                    "subtitle": "Modal Rp25 Juta - 1 Milyar",
+                    "subtitle": "Untuk Modal Rp25 Juta - 1 Milyar. Cocok untuk Anda yang ingin membuka Usaha Mikro dan Kecil (UMKM).",
                     "options": [
                         {
                             "package": "Jack",
@@ -656,6 +656,7 @@
                 {
                     "id": 20,
                     "title": "HAKI Merek",
+                    "subtitle": "Pilihan tepat untuk melindungi dan mengembangkan Kekayaan Intelektual",
                     "options": [
                         {
                             "package": "Cek Merek",
@@ -703,6 +704,7 @@
                 {
                     "id": 21,
                     "title": "Pengalihan Merek",
+                    "subtitle": "Pilihan tepat untuk melindungi dan mengembangkan Kekayaan Intelektual",
                     "options": [
                         {
                             "package": "Exclude Akta",
@@ -727,6 +729,11 @@
                 {
                     "id": 22,
                     "title": "HAKI",
+                    "subtitle": "Pilihan tepat untuk melindungi dan mengembangkan Kekayaan Intelektual",
+                    "thumb_features": [
+                        "Konsultasi Pendaftaran HAKI",
+                        "Pendaftaran HAKI"
+                    ],
                     "options": [
                         {
                             "package": "Hak Cipta",
@@ -762,11 +769,12 @@
         },
         {
             "id": 2,
-            "category": "Perubahan Usaha",
+            "category": "Perubahan Legalitas Usaha",
             "services": [
                 {
                     "id": 12,
                     "title": "Perubahan PT Perseroan",
+                    "subtitle": "Pilihan tepat untuk menyesuaikan perubahan perusahaan kamu",
                     "options": [
                         {
                             "package": "Perubahan Akta",
@@ -802,6 +810,7 @@
                 {
                     "id": 13,
                     "title": "Perubahan PT PMA",
+                    "subtitle": "Pilihan tepat untuk menyesuaikan perubahan perusahaan kamu",
                     "options": [
                         {
                             "package": "Perubahan Akta",
@@ -837,6 +846,7 @@
                 {
                     "id": 14,
                     "title": "Perubahan PT Perorangan dan CV",
+                    "subtitle": "Pilihan tepat untuk menyesuaikan perubahan perusahaan kamu",
                     "options": [
                         {
                             "package": "PT Perorangan",
@@ -1058,7 +1068,7 @@
                             ]
                         },
                         {
-                            "package": "Jabodetabek",
+                            "package": "Luar Pulau Jawa",
                             "price": 2049000,
                             "features": [
                                 "Konsultasi Perpajakan",

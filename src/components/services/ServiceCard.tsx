@@ -76,7 +76,7 @@ export default function ServiceCard({ service }: ServiceCardProps) {
               {service.title}
             </h3>
             <p className="text-gray-700">
-              Cocok untuk Anda yang ingin membuka Usaha Mikro dan Kecil (UMKM)
+              {service.subtitle ?? "Cocok untuk Anda yang ingin membuka Usaha Mikro dan Kecil (UMKM)"}
             </p>
           </motion.div>
 
@@ -85,7 +85,7 @@ export default function ServiceCard({ service }: ServiceCardProps) {
           <div className="h-full space-y-3 grow">
             <p className="font-semibold">Apa yang akan kamu dapatkan:</p>
             <ul className="list-none text-gray-700 space-y-3">
-              {service.options[0].features.map((feature, index) => (
+              {(service.thumb_features || service.options[0].features).map((feature, index) => (
                 <motion.li
                   key={index}
                   variants={listVariants}

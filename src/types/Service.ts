@@ -9,6 +9,7 @@ export type Service = {
     id: number;
     title: string;
     subtitle?: string;
+    thumb_features?: string[];
     options: ServiceOption[];
     is_highlighted: boolean;
 };

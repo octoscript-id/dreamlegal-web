@@ -24,7 +24,7 @@ export default function OptionCard({option, variant, isLast}: OptionCardProps) {
     return (
         <div className={`h-full flex flex-col bg-white border border-brand-100 rounded-xl p-4 gap-8 ${isLast && "md:max-xl:col-span-2"}`}>
             <div className="flex flex-col items-start space-y-3">
-                <Badge variant={variant} className="text-sm uppercase">{option.package}</Badge>
+                <Badge variant={variant} className="text-sm uppercase font-bold">{option.package}</Badge>
                 { option.duration && <Badge className="text-sm">Proses: {option.duration}</Badge> }
             </div>
             <div className="grow space-y-3 text-sm">
