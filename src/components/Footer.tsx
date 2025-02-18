@@ -6,11 +6,11 @@ export default function Footer() {
     const socialMedia = [
         {
             'name': 'Instagram',
-            'href': '/'
+            'href': 'https://www.instagram.com/dreamlegal.id/'
         },
         {
             'name': 'TikTok',
-            'href': '/'
+            'href': 'https://www.tiktok.com/@dreamlegal.id'
         },
     ]
 
@@ -37,17 +37,15 @@ export default function Footer() {
                 <section id="right-footer" className="flex flex-col md:flex-row gap-6 md:gap-20">
                     <section id="left-sub-footer">
                         <h3 className="text-gray-500 text-body-md mb-3">Media Sosial</h3>
-                        <ul className="flex flex-col justify-center gap-1">
+                        <div className="flex flex-col justify-center gap-1">
                             {
                                 socialMedia.map((sm, key) => (
-                                    <li key={key} className="text-gray-900 text-body-lg pr-3 py-2">
-                                        <Link href={sm.href}>
-                                            {sm.name}
-                                        </Link>
-                                    </li>
+                                    <Link key={key} href={sm.href} className="text-gray-900 text-body-lg pr-3 py-2">
+                                        {sm.name}
+                                    </Link>
                                 ))
                             }
-                        </ul>
+                        </div>
                     </section>
                     <section id="right-sub-footer">
                         <h3 className="text-gray-500 text-body-md mb-3">Kontak kami</h3>
