@@ -53,13 +53,17 @@ export default function Footer() {
                             <div className="flex flex-col gap-2 pr-3 py-2">
                                 <h4 className="text-gray-900 text-body-lg">E-mail</h4>
                                 <Badge>
-                                    legalitasmilikbersama@gmail.com
+                                    <a href="mailto:care@dreamlegal.id" target="_blank" className="text-blue-500 hover:underline">
+                                        care@dreamlegal.id
+                                    </a>
                                 </Badge>
                             </div>
                             <div className="flex flex-col gap-2 pr-3 py-2">
                                 <h4 className="text-gray-900 text-body-lg">Whatsapp</h4>
                                 <Badge className="w-fit">
-                                    +62 877-2272-7077
+                                    <a href="https://wa.me/6287722727077" target="_blank" className="text-blue-500 hover:underline">
+                                        +62 877-2272-7077
+                                    </a>
                                 </Badge>
                             </div>
                         </div>
@@ -68,7 +72,7 @@ export default function Footer() {
             </section>
             <section className="mt-3 flex justify-between items-center">
                 <span>© Dream Legal 2024</span>
-                <span>by Octoscript</span>
+                <span>Made by Octoscript</span>
             </section>
         </footer>
         </>
