@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { Badge } from "@/components/ui/badge"
+import { CONTACT_NUMBER } from "@/static/Contact";
 
 export default function Footer() {
     const socialMedia = [
@@ -61,8 +62,8 @@ export default function Footer() {
                             <div className="flex flex-col gap-2 pr-3 py-2">
                                 <h4 className="text-gray-900 text-body-lg">Whatsapp</h4>
                                 <Badge className="w-fit">
-                                    <a href="https://wa.me/6287722727077" target="_blank" className="text-blue-500 hover:underline">
-                                        +62 877-2272-7077
+                                    <a href={"https://wa.me/" + CONTACT_NUMBER} target="_blank" className="text-blue-500 hover:underline">
+                                        +62 818-102-266
                                     </a>
                                 </Badge>
                             </div>
