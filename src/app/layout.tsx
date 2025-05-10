@@ -32,7 +32,16 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <Providers>
-        <GoogleTagManager key="gtm" gtmId="AW-17046046621" />
+        <GoogleTagManager
+          key="gtm"
+          gtmId="AW-17046046621"
+          dataLayer={{
+            event: "conversion",
+            send_to: "AW-17046046621/GeAHCLvkocIaEJ2PmMA_",
+            value: 1.0,
+            currency: "IDR",
+          }}
+        />
         <body
           className={`${LibreBaskerville.className} ${PlusJakartaSans.className} antialiased scroll-smooth`}
         >
