@@ -6,6 +6,7 @@ import Footer from "../components/Footer";
 import WhatsappFloatingButton from "@/components/FloatingButton";
 import { metadataSEO } from "@/lib/metadataSEO";
 import { Providers } from "./providers";
+import { GoogleTagManager } from "@next/third-parties/google";
 
 const LibreBaskerville = Libre_Baskerville({
   weight: "400",
@@ -29,11 +30,21 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <Providers>
+        <GoogleTagManager key="gtm" gtmId="AW-17046046621" />
         <body
           className={`${LibreBaskerville.className} ${PlusJakartaSans.className} antialiased scroll-smooth`}
         >
+          <noscript>
+            <iframe
+              key="gtm-noscript"
+              src="https://www.googletagmanager.com/gtag/js?id=AW-17046046621"
+              height="0"
+              width="0"
+              style={{ display: "none", visibility: "hidden" }}
+            ></iframe>
+          </noscript>
           <WhatsappFloatingButton />
           <Navbar />
           {children}
