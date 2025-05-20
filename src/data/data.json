@@ -80,7 +80,7 @@
             "services": [
                 {
                     "id": 1,
-                    "title": "Pendirian PT Perorangan",
+                    "title": "Layanan Jasa Pendirian PT Perorangan",
                     "options": [
                         {
                             "package": "Queen",
@@ -121,7 +121,7 @@
                 },
                 {
                     "id": 2,
-                    "title": "Pendirian CV",
+                    "title": "Layanan Jasa Pendirian CV",
                     "options": [
                         {
                             "package": "Jack",
@@ -174,7 +174,7 @@
                 },
                 {
                     "id": 3,
-                    "title": "Pendirian PT Perseroan",
+                    "title": "Layanan Jasa Pendirian PT Perseroan",
                     "subtitle": "Untuk Modal Di Bawah 1M. Cocok untuk Anda yang ingin membuka Usaha Mikro dan Kecil (UMKM)",
                     "options": [
                         {
@@ -228,7 +228,7 @@
                 },
                 {
                     "id": 4,
-                    "title": "Pendirian PT Perseroan",
+                    "title": "Layanan Jasa Pendirian PT Perseroan",
                     "subtitle": "Untuk Modal Di Bawah 1 M + Pendaftaran BNRI. Cocok untuk Anda yang ingin membuka Usaha Mikro dan Kecil (UMKM)",
                     "options": [
                         {
@@ -288,7 +288,7 @@
                 },
                 {
                     "id": 5,
-                    "title": "Pendirian PT Perseroan",
+                    "title": "Layanan Jasa Pendirian PT Perseroan",
                     "subtitle": "Untuk Modal Di Atas 1M. Cocok untuk Anda yang ingin membuka Usaha Mikro dan Kecil (UMKM).",
                     "options": [
                         {
@@ -342,7 +342,7 @@
                 },
                 {
                     "id": 6,
-                    "title": "Pendirian PT Perseroan",
+                    "title": "Layanan Jasa Pendirian PT Perseroan",
                     "subtitle": "Untuk Modal Di Atas 1 M + Pendaftaran BNRI. Cocok untuk Anda yang ingin membuka Usaha Mikro dan Kecil (UMKM).",
                     "options": [
                         {
@@ -402,7 +402,7 @@
                 },
                 {
                     "id": 7,
-                    "title": "Pendirian PT PMA",
+                    "title": "Layanan Jasa Pendirian PT PMA",
                     "options": [
                         {
                             "package": "Jack",
@@ -455,7 +455,7 @@
                 },
                 {
                     "id": 8,
-                    "title": "Pendirian PT PMA",
+                    "title": "Layanan Jasa Pendirian PT PMA",
                     "subtitle": "+ Pendaftaran BNRI",
                     "options": [
                         {
@@ -515,7 +515,7 @@
                 },
                 {
                     "id": 9,
-                    "title": "Pendirian Yayasan",
+                    "title": "Layanan Jasa Pendirian Yayasan",
                     "subtitle": "Untuk Modal Rp10 Juta - Rp25 Juta. Cocok untuk Anda yang ingin membuka Usaha Mikro dan Kecil (UMKM).",
                     "options": [
                         {
@@ -551,7 +551,7 @@
                 },
                 {
                     "id": 10,
-                    "title": "Pendirian Yayasan",
+                    "title": "Layanan Jasa Pendirian Yayasan",
                     "subtitle": "Untuk Modal Rp25 Juta - 1 Milyar. Cocok untuk Anda yang ingin membuka Usaha Mikro dan Kecil (UMKM).",
                     "options": [
                         {
@@ -587,7 +587,7 @@
                 },
                 {
                     "id": 11,
-                    "title": "Pendirian Perkumpulan",
+                    "title": "Layanan Jasa Pendirian Perkumpulan",
                     "options": [
                         {
                             "package": "Jack",
@@ -628,7 +628,7 @@
             "services": [
                 {
                     "id": 20,
-                    "title": "HAKI Merek",
+                    "title": "Layanan Jasa HAKI Merek",
                     "subtitle": "Pilihan tepat untuk melindungi dan mengembangkan Kekayaan Intelektual",
                     "options": [
                         {
@@ -676,7 +676,7 @@
                 },
                 {
                     "id": 21,
-                    "title": "Pengalihan Merek",
+                    "title": "Layanan Jasa Pengalihan Merek",
                     "subtitle": "Pilihan tepat untuk melindungi dan mengembangkan Kekayaan Intelektual",
                     "options": [
                         {
@@ -701,7 +701,7 @@
                 },
                 {
                     "id": 22,
-                    "title": "HAKI",
+                    "title": "Layanan Jasa HAKI",
                     "subtitle": "Pilihan tepat untuk melindungi dan mengembangkan Kekayaan Intelektual",
                     "thumb_features": [
                         "Konsultasi Pendaftaran HAKI",
@@ -746,7 +746,7 @@
             "services": [
                 {
                     "id": 12,
-                    "title": "Perubahan PT Perseroan",
+                    "title": "Layanan Jasa Perubahan PT Perseroan",
                     "subtitle": "Pilihan tepat untuk menyesuaikan perubahan perusahaan kamu",
                     "options": [
                         {
@@ -782,7 +782,7 @@
                 },
                 {
                     "id": 13,
-                    "title": "Perubahan PT PMA",
+                    "title": "Layanan Jasa Perubahan PT PMA",
                     "subtitle": "Pilihan tepat untuk menyesuaikan perubahan perusahaan kamu",
                     "options": [
                         {
@@ -818,7 +818,7 @@
                 },
                 {
                     "id": 14,
-                    "title": "Perubahan PT Perorangan dan CV",
+                    "title": "Layanan Jasa Perubahan PT Perorangan dan CV",
                     "subtitle": "Pilihan tepat untuk menyesuaikan perubahan perusahaan kamu",
                     "options": [
                         {
@@ -854,7 +854,7 @@
             "services": [
                 {
                     "id": 15,
-                    "title": "Pembubaran PT Perseroan dan PT PMA",
+                    "title": "Layanan Jasa Pembubaran PT Perseroan dan PT PMA",
                     "subtitle": "Pilihan tepat untuk menyelesaikan pembubaran perusahaan anda",
                     "options": [
                         {
@@ -884,7 +884,7 @@
                 },
                 {
                     "id": 16,
-                    "title": "Pembubaran PT Perorangan dan CV",
+                    "title": "Layanan Jasa Pembubaran PT Perorangan dan CV",
                     "subtitle": "Pilihan tepat untuk menyelesaikan pembubaran perusahaan anda",
                     "options": [
                         {
@@ -920,7 +920,7 @@
             "services": [
                 {
                     "id": 17,
-                    "title": "Pendaftaran BNRI",
+                    "title": "Layanan Jasa Pendaftaran BNRI",
                     "subtitle": "Agar perusahaan kamu terdaftar dalam Berita Negara Republik Indonesia",
                     "options": [
                         {
@@ -946,7 +946,7 @@
                 },
                 {
                     "id": 18,
-                    "title": "Pendaftaran NIB",
+                    "title": "Layanan Jasa Pendaftaran NIB",
                     "subtitle": "Cocok untuk menunjang perizinan usaha kamu",
                     "options": [
                         {
@@ -980,7 +980,7 @@
                 },
                 {
                     "id": 19,
-                    "title": "Pendaftaran PSE",
+                    "title": "Layanan Jasa Pendaftaran PSE",
                     "subtitle": "Agar website kamu terdaftar di Kementrian Komunikasi dan Digital",
                     "options": [
                         {
@@ -1003,7 +1003,7 @@
             "services": [
                 {
                     "id": 23,
-                    "title": "Pendaftaran PKP",
+                    "title": "Layanan Jasa Pendaftaran PKP",
                     "subtitle": "Cocok untuk perusahaan kamu yang mulai berkembang",
                     "options": [
                         {
@@ -1033,7 +1033,7 @@
                 },
                 {
                     "id": 24,
-                    "title": "Pendaftaran PKP",
+                    "title": "Layanan Jasa Pendaftaran PKP",
                     "subtitle": "Cocok untuk perusahaan kamu yang mulai berkembang",
                     "options": [
                         {
@@ -1067,25 +1067,25 @@
     "steps": [
         {
             "id": 1,
-            "title": "Pilih Layanan",
+            "title": "Layanan Jasa Pilih Layanan",
             "description": "Anda dapat memilih jasa layanan yang ada sesuai dengan kebutuhan Anda.",
             "image": "alur-dummy-0.png"
         },
         {
             "id": 2,
-            "title": "Konsultasi Melalui WhatsApp",
+            "title": "Layanan Jasa Konsultasi Melalui WhatsApp",
             "description": "Jika dirasa kebingungan, anda bisa menghubungi kami via WhatsApp untuk melakukan konsultasi secara gratis.",
             "image": "alur-dummy-1.jpeg"
         },
         {
             "id": 3,
-            "title": "Booking Layanan",
+            "title": "Layanan Jasa Booking Layanan",
             "description": "Jika sudah ditentukan, klien bisa melakukan Booking Fee agar proses bisa dilanjutkan.",
             "image": "alur-dummy-3.jpeg"
         },
         {
             "id": 4,
-            "title": "Proses Pengerjaan",
+            "title": "Layanan Jasa Proses Pengerjaan",
             "description": "Selanjutnya klien akan dihubungkan dengan Staff Legal yang akan membantu proses yang dibutuhkan.",
             "image": "alur-dummy-2.jpeg"
         }
@@ -1093,7 +1093,7 @@
     "testimonies": [
         {
             "id": 1,
-            "title": "Highly Recommended",
+            "title": "Layanan Jasa Highly Recommended",
             "testimonial": "This company has provided excellent service and support. Highly recommended!",
             "profile": {
                 "name": "John Doe",
@@ -1103,7 +1103,7 @@
         },
         {
             "id": 2,
-            "title": "Amazing Experience!",
+            "title": "Layanan Jasa Amazing Experience!",
             "testimonial": "Amazing experience! The team was responsive and delivered quality results.",
             "profile": {
                 "name": "Jane Smith",
@@ -1113,7 +1113,7 @@
         },
         {
             "id": 3,
-            "title": "Top-notch service provider!",
+            "title": "Layanan Jasa Top-notch service provider!",
             "testimonial": "A top-notch service provider! We couldn’t be happier with the results.",
             "profile": {
                 "name": "Sam Wilson",
@@ -1123,7 +1123,7 @@
         },
         {
             "id": 4,
-            "title": "Exceeded Expectations",
+            "title": "Layanan Jasa Exceeded Expectations",
             "testimonial": "The team exceeded our expectations! Every detail was handled with care.",
             "profile": {
                 "name": "Michael Johnson",
@@ -1133,7 +1133,7 @@
         },
         {
             "id": 5,
-            "title": "Professional and Reliable",
+            "title": "Layanan Jasa Professional and Reliable",
             "testimonial": "Professional, reliable, and supportive throughout the entire project.",
             "profile": {
                 "name": "Emily Davis",
